@@ -119,6 +119,27 @@ public class ConsoleColors {
         };
     }
 
+    public static String getCellBackgroundByColor(PlayerColor color){
+        String result = " ";
+        switch (color.index){
+            case 1 ->  result = ConsoleColors.GREEN_BACKGROUND;
+            case 4 ->  result = ConsoleColors.BLUE_BACKGROUND;
+            case 3 ->  result = ConsoleColors.RED_BACKGROUND;
+            case 2  -> result = ConsoleColors.YELLOW_BACKGROUND;
+        }
+        return result;
+    }
+    public static String getCellByColor(PlayerColor color){
+        String result = " ";
+        switch (color.index){
+            case 1 ->  result = ConsoleColors.GREEN;
+            case 4 ->  result = ConsoleColors.BLUE;
+            case 3 ->  result = ConsoleColors.RED;
+            case 2  -> result = ConsoleColors.YELLOW;
+        }
+        return result;
+    }
+
     public static String getSafetyCell(String cell){
         return ConsoleColors.BLACK_BACKGROUND_BRIGHT + " " + cell.charAt(1)+ " " + ConsoleColors.RESET;
     }
