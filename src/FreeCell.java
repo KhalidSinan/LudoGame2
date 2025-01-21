@@ -40,7 +40,7 @@ public class FreeCell extends Cells {
             return false;
         }
         for (int i = 0; i < listStones.size(); i++) {
-            if (listStones.get(i).color != color) {
+            if (listStones.get(i).color == color) {
                 return false;
             }
         }
