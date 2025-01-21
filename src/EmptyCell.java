@@ -18,4 +18,9 @@ public class EmptyCell extends Cells {
     ArrayList<PlayStone> collide(PlayStone stone) {
         return new ArrayList<>();
     }
+
+    @Override
+    public String toString() {
+        return ConsoleColors.BLACK_BACKGROUND + "   " + ConsoleColors.RESET;
+    }
 }

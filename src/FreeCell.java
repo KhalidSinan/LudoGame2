@@ -25,4 +25,16 @@ public class FreeCell extends Cells {
         listStones.add(stone);
         return new ArrayList<>();
     }
+
+    @Override
+    public String toString() {
+        if(listStones.size() == 0) return ConsoleColors.WHITE_BACKGROUND + "   " + ConsoleColors.RESET;
+        else if(listStones.size() == 1) {
+            PlayStone standingStone = listStones.get(0);
+            String stoneColor = ConsoleColors.getCellByColor(standingStone.color);
+            return  stoneColor + " " + standingStone.num + " " + ConsoleColors.RESET;
+        }
+        String wallColor = ConsoleColors.getCellBackgroundByColor(listStones.get(0).color);
+        return wallColor + "   " + ConsoleColors.RESET;
+    }
 }
