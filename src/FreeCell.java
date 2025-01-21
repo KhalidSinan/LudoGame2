@@ -15,24 +15,32 @@ public class FreeCell extends Cells {
     }
 
     @Override
-    State collide(State state, PlayStone stone) {
+    public State collide(State state, PlayStone stone) {
         if (!listStones.isEmpty() && !stone.color.equals(listStones.get(0).color)) {
             State.hasNewTurn = true;
-//            state.grid[stone.position.x][stone.position.y].listStones.clear();
-            listStones.clear();
+            sendStonesToHome(listStones, state);
         }
         listStones.add(stone);
-//        state.grid[stone.position.x][stone.position.y].listStones.add(stone);
         return state;
     }
 
+    public void sendStonesToHome(ArrayList<PlayStone> stones, State state){
+        stones.forEach(currStone -> {
+            currStone.isOut = true;
+            currStone.i = -1;
+            currStone.position = LudoBoard.playersHomePositions.get(currStone.color).get(currStone.num-1);
+            state.grid[currStone.position.x][currStone.position.y].listStones.add(currStone);
+        });
+        stones.clear();
+    }
+
     @Override
-    boolean isBlock(PlayStone stone) {
+    public boolean isBlock(PlayerColor color) {
         if (listStones.size() <= 1) {
             return false;
         }
         for (int i = 0; i < listStones.size(); i++) {
-            if (listStones.get(i).color != stone.color) {
+            if (listStones.get(i).color != color) {
                 return false;
             }
         }

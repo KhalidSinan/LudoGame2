@@ -32,7 +32,7 @@ public abstract class Cells {
         return newStones;
     }
 
-    boolean isBlock(PlayStone stone) {
+    boolean isBlock(PlayerColor color) {
         return false;
     }
 

@@ -106,7 +106,7 @@ public class State {
         int step = 0;
         for (int i = stone.i + 1; i <= diceNumber + stone.i; i++) {
             Position pos = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(stone.i + i);
-            if (grid[pos.x][pos.y].listStones.size() >= 2) {
+            if (grid[pos.x][pos.y].isBlock(stone.color)) {
                 return step;
             }
             step++;
@@ -122,51 +122,13 @@ public class State {
         }
         addTurn(dice);
         State currentState = new State(this);
-        int playerIndex = getPlayerIndex(player);
-        for (int i = 0; i < currentState.players.get(playerIndex).stones.size(); i++) {
-            if (currentState.players.get(playerIndex).stones.get(i).equals(chosenStone)) {
-                PlayStone currentStone = currentState.players.get(playerIndex).stones.get(i);
-                if (currentStone.i == -1) {
-                    currentStone.isOut = false;
-                    currentStone.i = 0;
-                    break;
-                } else {
-                    dice = currentState.blockFounded(dice, currentStone);
-                    currentState.handleBoardMovement(currentStone, playerIndex, dice);
-                    break;
-                }
-            }
-        }
+        dice = currentState.blockFounded(dice, chosenStone);
+        currentState.grid[chosenStone.position.x][chosenStone.position.y].listStones.remove(chosenStone);
+        Position newPosition = LudoBoard.stoneRoadOnBoardBaseOnColor.get(chosenStone.color).get(chosenStone.i + dice);
+        currentState.grid[newPosition.x][newPosition.y].collide(currentState, chosenStone);
         return currentState;
     }
 
-    private void handleBoardMovement(PlayStone currentStone, int playerIndex, int dice) {
-        Map<String, Integer> positions = intersectionWithStep(currentStone, dice);
-        Map<String, Integer> prevPositions = intersectionWithStep(currentStone, 0);
-        String[] colors = positions.keySet().toArray(new String[0]);
-        Integer[] indexPositions = positions.values().toArray(new Integer[0]);
-        Integer[] prevIndexPositions = prevPositions.values().toArray(new Integer[0]);
-        for (int index = 0; index < colors.length; index++) {
-            int tempIndex = indexPositions[index];
-            int colorIndex = getPlayerIndexByString(colors[index]);
-            int prevIndex = prevIndexPositions[index];
-            grid[colorIndex][prevIndex].listStones.remove(currentStone);
-            grid[colorIndex][tempIndex].listStones.remove(currentStone);
-            currentStone.i += dice;
-//            grid[colorIndex][tempIndex].collide(currentStone);
-            currentStone.i -= dice;
-        }
-        grid[playerIndex][currentStone.i].listStones.remove(currentStone);
-        currentStone.i += dice;
-//        ArrayList<PlayStone> stones = grid[playerIndex][currentStone.i].collide(currentStone);
-//        if (!stones.isEmpty()) {
-//            for (PlayStone stone : stones) {
-//                int colorIndex = getPlayerIndexByString(String.valueOf(stone.color));
-//                players.get(colorIndex).stones.get(stone.num - 1).i = -1;
-//                players.get(colorIndex).stones.get(stone.num - 1).isOut = true;
-//            }
-//        }
-    }
 
     public PlayStone chooseAStone(Player player, int dice) {
         if (player.isComputer) return new ComputerDecision(this, player, dice).getDecisionStone();
