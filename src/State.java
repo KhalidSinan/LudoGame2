@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 
 public class State {
     static boolean hasNewTurn = false;
@@ -107,7 +104,6 @@ public class State {
 
     public int BlockFounded(int diceNumber, PlayStone stone) {
         int step = 0;
-
         for (int i = stone.i + 1; i <= diceNumber + stone.i; i++) {
             if (grid[stone.color.index - 1][i].listStones.size() >= 2) {
                 return step;
@@ -156,18 +152,46 @@ public class State {
             grid[colorIndex][prevIndex].listStones.remove(currentStone);
             grid[colorIndex][tempIndex].listStones.remove(currentStone);
             currentStone.i += dice;
-            grid[colorIndex][tempIndex].collide(currentStone);
+//            grid[colorIndex][tempIndex].collide(currentStone);
             currentStone.i -= dice;
         }
         grid[playerIndex][currentStone.i].listStones.remove(currentStone);
         currentStone.i += dice;
-        ArrayList<PlayStone> stones = grid[playerIndex][currentStone.i].collide(currentStone);
-        if (!stones.isEmpty()) {
-            for (PlayStone stone : stones) {
-                int colorIndex = getPlayerIndexByString(String.valueOf(stone.color));
-                players.get(colorIndex).stones.get(stone.num - 1).i = -1;
-                players.get(colorIndex).stones.get(stone.num - 1).isOut = true;
+//        ArrayList<PlayStone> stones = grid[playerIndex][currentStone.i].collide(currentStone);
+//        if (!stones.isEmpty()) {
+//            for (PlayStone stone : stones) {
+//                int colorIndex = getPlayerIndexByString(String.valueOf(stone.color));
+//                players.get(colorIndex).stones.get(stone.num - 1).i = -1;
+//                players.get(colorIndex).stones.get(stone.num - 1).isOut = true;
+//            }
+//        }
+    }
+
+    public PlayStone chooseAStone(Player player, int dice) {
+        if (player.isComputer) return new ComputerDecision(this, player, dice).getDecisionStone();
+        else return chooseAStoneByPlayer(this, player, dice);
+    }
+
+    private PlayStone chooseAStoneByPlayer(State currentState, Player player, int dice) {
+        int playerIndex = State.getPlayerIndex(player);
+        ArrayList<PlayStone> movableStones = currentState.players.get(playerIndex).getMovableStones(currentState, dice);
+        if (movableStones.isEmpty()) {
+            return null;
+        } else {
+            System.out.print(ConsoleColors.WHITE_BOLD_BRIGHT + "choose a stone to move : " + ConsoleColors.RESET);
+            String color = ConsoleColors.getColor(player.playerColor);
+            for (PlayStone movableStone : movableStones) {
+                System.out.print(color + movableStone.num + "  " + ConsoleColors.RESET);
             }
+            System.out.println();
+            Scanner input = new Scanner(System.in);
+            int chosen = input.nextInt();
+            for (PlayStone movableStone : movableStones) {
+                if (movableStone.num == chosen) {
+                    return movableStone;
+                }
+            }
+            return null;
         }
     }
 
