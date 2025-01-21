@@ -13,7 +13,7 @@ public class StartCell extends ColoredCell {
 
     @Override
     public Cells copy() {
-        return new StartCell(getColor(), this.listStones);
+        return new StartCell(getColor(), new ArrayList<PlayStone>(this.listStones));
     }
 
     @Override

@@ -11,7 +11,7 @@ public class SafetyCell extends Cells {
 
     @Override
     public Cells copy() {
-        return new SafetyCell(this.name, this.listStones);
+        return new SafetyCell(this.name, new ArrayList<PlayStone>(this.listStones));
     }
 
     @Override

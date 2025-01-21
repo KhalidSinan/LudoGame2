@@ -11,7 +11,7 @@ public class EmptyCell extends Cells {
 
     @Override
     public Cells copy() {
-        return new EmptyCell(this.name, this.listStones);
+        return new EmptyCell(this.name, new ArrayList<PlayStone>(this.listStones));
     }
 
     @Override

@@ -11,6 +11,7 @@ public class State {
     public State(Cells[][] grid, ArrayList<Player> players) {
         this.grid = grid;
         this.players = players;
+//        getNewListStones();
         this.isFinished = isFinished();
     }
 
@@ -18,6 +19,7 @@ public class State {
         this.statePlayer = currentPlayer;
         this.grid = grid;
         this.players = players;
+//        getNewListStones();
         this.isFinished = isFinished();
     }
 

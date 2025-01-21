@@ -11,7 +11,7 @@ public class FreeCell extends Cells {
 
     @Override
     public Cells copy() {
-        return new FreeCell(this.name, this.listStones);
+        return new FreeCell(this.name, new ArrayList<PlayStone>(this.listStones));
     }
 
     @Override
