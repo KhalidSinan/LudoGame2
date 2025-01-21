@@ -125,7 +125,7 @@ public class Game {
             lastState.switchPlayer();
             currentPlayer = lastState.getCurrentPlayer();
             int dice = dice();
-            if (State.repeatedTurns == 2) {
+            if (State.repeatedTurns == 3) {
                 System.out.println("You cannot play 3 consecutive turns");
                 State.hasNewTurn = false;
                 State.repeatedTurns = 0;
