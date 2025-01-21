@@ -107,7 +107,7 @@ public class Game {
                 firstState.statePlayer = firstPlayer;
             }
         }
-        PlayStone chosenStone = chooseAStone(firstState, firstPlayer, dice);
+        PlayStone chosenStone = firstState.chooseAStone(firstPlayer, dice);
         State newState = firstState.move(firstPlayer, chosenStone, dice);
         states.add(newState);
 //        LudoBoard board = new LudoBoard(newState.players);
@@ -151,9 +151,8 @@ public class Game {
             }
             System.out.println(ConsoleColors.getColor(
                     currentPlayer.playerColor) + currentPlayer.playerColor + " : " + dice + ConsoleColors.RESET);
-            PlayStone chosenStone = chooseAStone(lastState, currentPlayer, dice);
-            if (chosenStone == null) {
-            } else {
+            PlayStone chosenStone = lastState.chooseAStone(currentPlayer, dice);
+            if (chosenStone != null) {
                 State newState = lastState.move(currentPlayer, chosenStone, dice);
                 states.add(newState);
             }
@@ -172,33 +171,7 @@ public class Game {
                 states.get(states.size() - 1).statePlayer.playerColor + " WON " + ConsoleColors.RESET);
     }
 
-    private PlayStone chooseAStone(State currentState, Player player, int dice) {
-        if (player.isComputer) return new ComputerDecision(currentState, player, dice).getDecisionStone();
-        else return chooseAStoneByPlayer(currentState, player, dice);
-    }
 
-    private PlayStone chooseAStoneByPlayer(State currentState, Player player, int dice) {
-        int playerIndex = State.getPlayerIndex(player);
-        ArrayList<PlayStone> movableStones = currentState.players.get(playerIndex).getMovableStones(currentState, dice);
-        if (movableStones.isEmpty()) {
-            return null;
-        } else {
-            System.out.print(ConsoleColors.WHITE_BOLD_BRIGHT + "choose a stone to move : " + ConsoleColors.RESET);
-            String color = ConsoleColors.getColor(player.playerColor);
-            for (PlayStone movableStone : movableStones) {
-                System.out.print(color + movableStone.num + "  " + ConsoleColors.RESET);
-            }
-            System.out.println();
-            Scanner input = new Scanner(System.in);
-            int chosen = input.nextInt();
-            for (PlayStone movableStone : movableStones) {
-                if (movableStone.num == chosen) {
-                    return movableStone;
-                }
-            }
-            return null;
-        }
-    }
 
 }
 
