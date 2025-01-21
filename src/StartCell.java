@@ -1,16 +1,15 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class StartCell extends ColoredCell {
     public StartCell() {
-        super('#');
+        super("#");
     }
 
     public StartCell(PlayerColor color) {
-        super('#', color);
+        super("#", color);
     }
 
-    public StartCell(char name, ArrayList<PlayStone> listStones) {
+    public StartCell(String name, ArrayList<PlayStone> listStones) {
         super(name, listStones);
     }
 

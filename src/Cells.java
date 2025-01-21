@@ -1,17 +1,16 @@
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 public abstract class Cells {
-    char name;
+    String name;
     ArrayList<PlayStone> listStones;
 
-    public Cells(char name) {
+    public Cells(String name) {
         this.name = name;
         this.listStones= new ArrayList<>();
     }
 
-    public Cells(char name, ArrayList<PlayStone> listStones) {
+    public Cells(String name, ArrayList<PlayStone> listStones) {
         this.name = name;
         this.listStones = listStones;
     }

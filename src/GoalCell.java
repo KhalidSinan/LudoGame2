@@ -1,17 +1,16 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class GoalCell extends ColoredCell {
 
     public GoalCell() {
-        super('*');
+        super("*");
     }
 
     public GoalCell(PlayerColor color) {
-        super('*', color);
+        super("*", color);
     }
 
-    public GoalCell(char name, ArrayList<PlayStone> listStones) {
+    public GoalCell(String name, ArrayList<PlayStone> listStones) {
         super(name, listStones);
     }
 

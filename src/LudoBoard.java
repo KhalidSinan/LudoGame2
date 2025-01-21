@@ -301,6 +301,35 @@ public class LudoBoard {
         setPlayersOnBoard(players);
     }
 
+    public static Cells[][] createBoard(String[][] board) {
+        Cells[][] cells = new Cells[board.length][board[0].length];
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[i].length; j++) {
+                // Goal Cells
+                if (board[i][j].equals("BB")) cells[i][j] = new GoalCell(PlayerColor.BLUE);
+                if (board[i][j].equals("GG")) cells[i][j] = new GoalCell(PlayerColor.GREEN);
+                if (board[i][j].equals("RR")) cells[i][j] = new GoalCell(PlayerColor.RED);
+                if (board[i][j].equals("YY")) cells[i][j] = new GoalCell(PlayerColor.YELLOW);
+
+                // Start Cells
+                if (board[i][j].equals("#b")) cells[i][j] = new StartCell(PlayerColor.BLUE);
+                if (board[i][j].equals("#g")) cells[i][j] = new StartCell(PlayerColor.GREEN);
+                if (board[i][j].equals("#r")) cells[i][j] = new StartCell(PlayerColor.RED);
+                if (board[i][j].equals("#y")) cells[i][j] = new StartCell(PlayerColor.YELLOW);
+
+                // Free Cells
+                if (board[i][j].equals("--")) cells[i][j] = new FreeCell();
+
+                // Safety Cells
+                if (board[i][j].equals("++")) cells[i][j] = new SafetyCell();
+
+                // Empty Cells
+                if (board[i][j].equals("  ") || board[i][j].equals("..")) cells[i][j] = new EmptyCell();
+            }
+        }
+        return cells;
+    }
+
     private void setPlayersOnBoard(ArrayList<Player> players) {
         for (Player player : players) {
             setPlayerOnBoard(player);
@@ -319,7 +348,7 @@ public class LudoBoard {
             if (checkIfStoneExist(currOnBoard)) {
                 if (checkIfDifferentColor(currOnBoard, currStone.getStoneOnBoard())) {
                     String stonesOnSafetyCell = getStonesOnSafetyCell(currOnBoard);
-                    if(stonesOnSafetyCell == null) {
+                    if (stonesOnSafetyCell == null) {
                         ludoBoard[positionOnBoard.x][positionOnBoard.y] = currStone.getStoneOnBoard();
                     }
                     ludoBoard[positionOnBoard.x][positionOnBoard.y] = '+' + stonesOnSafetyCell;
@@ -334,7 +363,7 @@ public class LudoBoard {
 
     private String getStonesOnSafetyCell(String currOnBoard) {
         String stonesOnSafetyCell;
-        if(currOnBoard.charAt(0) == 'w') return null;
+        if (currOnBoard.charAt(0) == 'w') return null;
         if (Character.isDigit(currOnBoard.charAt(0)) && Character.isAlphabetic(currOnBoard.charAt(1))) {
             stonesOnSafetyCell = "2";
         } else {
