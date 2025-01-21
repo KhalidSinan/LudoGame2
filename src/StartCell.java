@@ -20,9 +20,9 @@ public class StartCell extends ColoredCell {
     }
 
     @Override
-    ArrayList<PlayStone> collide(PlayStone stone) {
+    State collide(State state, PlayStone stone) {
         listStones.add(stone);
-        return new ArrayList<>();
+        return state;
     }
 
     @Override

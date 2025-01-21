@@ -15,8 +15,8 @@ public class EmptyCell extends Cells {
     }
 
     @Override
-    ArrayList<PlayStone> collide(PlayStone stone) {
-        return new ArrayList<>();
+    State collide(State state, PlayStone stone) {
+        return state;
     }
 
     @Override

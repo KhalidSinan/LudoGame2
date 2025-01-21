@@ -15,15 +15,15 @@ public class FreeCell extends Cells {
     }
 
     @Override
-    ArrayList<PlayStone> collide(PlayStone stone) {
+    State collide(State state, PlayStone stone) {
         if (!listStones.isEmpty() && !stone.color.equals(listStones.get(0).color)) {
             State.hasNewTurn = true;
-            ArrayList<PlayStone> newStones = new ArrayList<>(listStones);
+//            state.grid[stone.position.x][stone.position.y].listStones.clear();
             listStones.clear();
-            return newStones;
         }
         listStones.add(stone);
-        return new ArrayList<>();
+//        state.grid[stone.position.x][stone.position.y].listStones.add(stone);
+        return state;
     }
 
     @Override
