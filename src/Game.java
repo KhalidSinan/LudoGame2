@@ -89,7 +89,8 @@ public class Game {
 
     void firstMove() {
         Player firstPlayer = firstPlayer();
-        State firstState = new State(LudoBoard.createBoard(), players, firstPlayer);
+        State firstState = new State(states.get(0).grid, players, firstPlayer);
+        System.out.println(firstState);
         int dice = 0;
         while (dice != 6) {
             dice = dice();
@@ -109,6 +110,7 @@ public class Game {
         }
         PlayStone chosenStone = firstState.chooseAStone(firstPlayer, dice);
         State newState = firstState.move(firstPlayer, chosenStone, dice);
+        System.out.println(newState);
         states.add(newState);
 //        LudoBoard board = new LudoBoard(newState.players);
 //        System.out.println(board);
@@ -154,6 +156,7 @@ public class Game {
             PlayStone chosenStone = lastState.chooseAStone(currentPlayer, dice);
             if (chosenStone != null) {
                 State newState = lastState.move(currentPlayer, chosenStone, dice);
+                System.out.println(newState);
                 states.add(newState);
             }
             try {
@@ -161,7 +164,6 @@ public class Game {
             } catch (InterruptedException ex) {
                 System.out.println(ex);
             }
-
 //            board = new LudoBoard(states.get(states.size() - 1).players);
 //            System.out.println(board);
         }

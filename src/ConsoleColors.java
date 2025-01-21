@@ -131,11 +131,11 @@ public class ConsoleColors {
     }
     public static String getCellByColor(PlayerColor color){
         String result = " ";
-        switch (color.index){
-            case 1 ->  result = ConsoleColors.GREEN;
-            case 4 ->  result = ConsoleColors.BLUE;
-            case 3 ->  result = ConsoleColors.RED;
-            case 2  -> result = ConsoleColors.YELLOW;
+        switch (color.ordinal()) {
+            case 0 -> result = ConsoleColors.GREEN;
+            case 3 -> result = ConsoleColors.BLUE;
+            case 2 -> result = ConsoleColors.RED;
+            case 1 -> result = ConsoleColors.YELLOW;
         }
         return result;
     }

@@ -35,7 +35,7 @@ public class ComputerDecision {
         PlayStone newStone = newState.players.get(playerIndex).stones.get(stone.num-1);
         int score = oldStone.i;
         if (!oldStone.isAWin && newStone.isAWin) score += 100;
-        else if(oldState.stonesIntersectedWith(oldStone, newStone.i - oldStone.i).containsValue(true)) score += 60;
+//        else if(oldState.stonesIntersectedWith(oldStone, newStone.i - oldStone.i).containsValue(true)) score += 60;
         else if (oldStone.isOut && !newStone.isOut) score += 50;
         return score;
     }

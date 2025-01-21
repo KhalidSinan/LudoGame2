@@ -2,21 +2,17 @@ import java.util.ArrayList;
 
 public class GoalCell extends ColoredCell {
 
-    public GoalCell() {
-        super("*");
-    }
-
     public GoalCell(PlayerColor color) {
-        super("*", color);
+        super(color, new ArrayList<>());
     }
 
-    public GoalCell(String name, ArrayList<PlayStone> listStones) {
-        super(name, listStones);
+    public GoalCell(PlayerColor color, ArrayList<PlayStone> listStones) {
+        super(color, listStones);
     }
 
     @Override
     public Cells copy() {
-        return new GoalCell(this.name, this.deepCopyStones(this.listStones));
+        return new GoalCell(getColor(), this.deepCopyStones(this.listStones));
     }
 
     @Override

@@ -4,12 +4,8 @@ public abstract class ColoredCell extends Cells {
 
     private PlayerColor color;
 
-    public ColoredCell(String name) {
-        super(name);
-    }
-
-    public ColoredCell(String name, PlayerColor color) {
-        super(name);
+    public ColoredCell(PlayerColor color, ArrayList<PlayStone> listStones) {
+        super(" ", listStones);
         this.color = color;
     }
 

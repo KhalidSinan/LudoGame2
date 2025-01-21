@@ -70,41 +70,11 @@ public class State {
         return newGrid;
     }
 
-    Map<String, Integer> intersectionWithStep(PlayStone stone, int step) {
-        Map<String, Integer> intersection = new HashMap<>();
-
-        for (PlayerColor color : PlayerColor.values()) {
-            if (stone.color == color) continue;
-            int colorIndex = color.getStartingPosition();
-            int offset = stone.color.getStartingPosition() - colorIndex;
-            int notKnownColorIndex = (stone.i + step + 12 * (offset < 0 ? (offset + 4) : offset)) % 48;
-            intersection.put(color.name(), notKnownColorIndex);
-        }
-
-        return intersection;
-    }
-
-    Map<String, Boolean> stonesIntersectedWith(PlayStone stone, int step) {
-        Map<String, Boolean> intersectedWith = new HashMap<>();
-        Map<String, Integer> positions = intersectionWithStep(stone, step);
-        String[] colors = positions.keySet().toArray(new String[0]);
-        Integer[] indexPositions = positions.values().toArray(new Integer[0]);
-        for (int index = 0; index < colors.length; index++) {
-            int tempIndex = indexPositions[index];
-            int colorIndex = getPlayerIndexByString(colors[index]);
-            for (PlayStone currStone : grid[colorIndex][tempIndex].listStones) {
-                if (!currStone.color.equals(stone.color)) {
-                    intersectedWith.put(colors[index], true);
-                    break;
-                }
-            }
-        }
-        return intersectedWith;
-    }
-
     public int blockFounded(int diceNumber, PlayStone stone) {
         int step = 0;
-        for (int i = stone.i + 1; i <= diceNumber + stone.i; i++) {
+        if(stone.i == -1) return diceNumber;
+        for (int i = 1; i <= diceNumber; i++) {
+            System.out.println(stone.i + i);
             Position pos = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(stone.i + i);
             if (grid[pos.x][pos.y].isBlock(stone.color)) {
                 return step;
@@ -122,9 +92,11 @@ public class State {
         }
         addTurn(dice);
         State currentState = new State(this);
+
         dice = currentState.blockFounded(dice, chosenStone);
         currentState.grid[chosenStone.position.x][chosenStone.position.y].listStones.remove(chosenStone);
         Position newPosition = LudoBoard.stoneRoadOnBoardBaseOnColor.get(chosenStone.color).get(chosenStone.i + dice);
+        if(chosenStone.isOut) newPosition = LudoBoard.stoneRoadOnBoardBaseOnColor.get(chosenStone.color).get(0);
         currentState.grid[newPosition.x][newPosition.y].collide(currentState, chosenStone);
         return currentState;
     }
