@@ -95,23 +95,24 @@ public class State {
         }
         addTurn(dice);
         State currentState = new State(this);
-        dice = currentState.blockFounded(dice, chosenStone);
-        currentState.grid[chosenStone.position.x][chosenStone.position.y].listStones.remove(chosenStone);
-        Position newPosition = LudoBoard.stoneRoadOnBoardBaseOnColor.get(chosenStone.color).get(chosenStone.i + dice);
-        if(chosenStone.isOut) newPosition = LudoBoard.stoneRoadOnBoardBaseOnColor.get(chosenStone.color).get(0);
-        currentState.grid[newPosition.x][newPosition.y].collide(currentState, chosenStone);
+        PlayStone stone = currentState.players.get(player.playerColor.index-1).stones.get(chosenStone.num-1);
+        dice = currentState.blockFounded(dice, stone);
+        currentState.grid[stone.position.x][stone.position.y].listStones.remove(stone);
+        Position newPosition = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(stone.i + dice);
+        if(stone.isOut) newPosition = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(0);
+        currentState.grid[newPosition.x][newPosition.y].collide(currentState, stone);
         return currentState;
     }
 
 
     public PlayStone chooseAStone(Player player, int dice) {
         if (player.isComputer) return new ComputerDecision(this, player, dice).getDecisionStone();
-        else return chooseAStoneByPlayer(this, player, dice);
+        else return chooseAStoneByPlayer(player, dice);
     }
 
-    private PlayStone chooseAStoneByPlayer(State currentState, Player player, int dice) {
+    private PlayStone chooseAStoneByPlayer(Player player, int dice) {
         int playerIndex = State.getPlayerIndex(player);
-        ArrayList<PlayStone> movableStones = currentState.players.get(playerIndex).getMovableStones(currentState, dice);
+        ArrayList<PlayStone> movableStones = players.get(playerIndex).getMovableStones(this, dice);
         if (movableStones.isEmpty()) {
             return null;
         } else {
