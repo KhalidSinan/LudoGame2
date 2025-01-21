@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Map;
 
 public class LudoBoard {
-    private final String[][] ludoBoard;
     public static final Map<PlayerColor, Map<Integer, Position>> stoneRoadOnBoardBaseOnColor;
     public static final Map<Integer, Position> blueRoadOnBoard;
     public static final Map<Integer, Position> greenRoadOnBoard;
@@ -281,27 +280,24 @@ public class LudoBoard {
         safetyCellsOnBoard.put(new Position(7, 3), true);
     }
 
+    private static final String[][] board = new String[][]{
+        {"  ", "  ", "  ", "..", "..", "--", "--", "#y", "..", "..", "  ", "  ", "  "},
+        {"  ", "  ", "  ", "..", "..", "--", "YY", "--", "..", "..", "  ", "  ", "  "},
+        {"  ", "  ", "  ", "..", "..", "--", "YY", "--", "..", "..", "  ", "  ", "  "},
+        {"..", "..", "..", "..", "..", "++", "YY", "++", "..", "..", "..", "..", ".."},
+        {"..", "..", "..", "..", "..", "--", "YY", "--", "..", "..", "..", "..", ".."},
+        {"#g", "--", "--", "++", "--", "--", "  ", "--", "--", "++", "--", "--", "--"},
+        {"--", "GG", "GG", "GG", "GG", "  ", "  ", "  ", "RR", "RR", "RR", "RR", "--"},
+        {"--", "--", "--", "++", "--", "--", "  ", "--", "--", "++", "--", "--", "#r"},
+        {"..", "..", "..", "..", "..", "--", "BB", "--", "..", "..", "..", "..", ".."},
+        {"..", "..", "..", "..", "..", "++", "BB", "++", "..", "..", "..", "..", ".."},
+        {"  ", "  ", "  ", "..", "..", "--", "BB", "--", "..", "..", "  ", "  ", "  "},
+        {"  ", "  ", "  ", "..", "..", "--", "BB", "--", "..", "..", "  ", "  ", "  "},
+        {"  ", "  ", "  ", "..", "..", "#b", "--", "--", "..", "..", "  ", "  ", "  "},
+    };
 
-    public LudoBoard(ArrayList<Player> players) {
-        ludoBoard = new String[][]{
-                {"  ", "  ", "  ", "..", "..", "--", "--", "#y", "..", "..", "  ", "  ", "  "},
-                {"  ", "  ", "  ", "..", "..", "--", "YY", "--", "..", "..", "  ", "  ", "  "},
-                {"  ", "  ", "  ", "..", "..", "--", "YY", "--", "..", "..", "  ", "  ", "  "},
-                {"..", "..", "..", "..", "..", "++", "YY", "++", "..", "..", "..", "..", ".."},
-                {"..", "..", "..", "..", "..", "--", "YY", "--", "..", "..", "..", "..", ".."},
-                {"#g", "--", "--", "++", "--", "--", "  ", "--", "--", "++", "--", "--", "--"},
-                {"--", "GG", "GG", "GG", "GG", "  ", "  ", "  ", "RR", "RR", "RR", "RR", "--"},
-                {"--", "--", "--", "++", "--", "--", "  ", "--", "--", "++", "--", "--", "#r"},
-                {"..", "..", "..", "..", "..", "--", "BB", "--", "..", "..", "..", "..", ".."},
-                {"..", "..", "..", "..", "..", "++", "BB", "++", "..", "..", "..", "..", ".."},
-                {"  ", "  ", "  ", "..", "..", "--", "BB", "--", "..", "..", "  ", "  ", "  "},
-                {"  ", "  ", "  ", "..", "..", "--", "BB", "--", "..", "..", "  ", "  ", "  "},
-                {"  ", "  ", "  ", "..", "..", "#b", "--", "--", "..", "..", "  ", "  ", "  "},
-        };
-        setPlayersOnBoard(players);
-    }
 
-    public static Cells[][] createBoard(String[][] board) {
+    public static Cells[][] createBoard() {
         Cells[][] cells = new Cells[board.length][board[0].length];
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[i].length; j++) {
@@ -330,71 +326,71 @@ public class LudoBoard {
         return cells;
     }
 
-    private void setPlayersOnBoard(ArrayList<Player> players) {
-        for (Player player : players) {
-            setPlayerOnBoard(player);
-        }
-    }
+//    private void setPlayersOnBoard(ArrayList<Player> players) {
+//        for (Player player : players) {
+//            setPlayerOnBoard(player);
+//        }
+//    }
 
-    private void setPlayerOnBoard(Player player) {
-        ArrayList<PlayStone> playerStones = player.stones;
-        for (int i = 0; i < playerStones.size(); i++) {
-            PlayStone currStone = playerStones.get(i);
-            Position positionOnBoard = stoneRoadOnBoardBaseOnColor.get(currStone.color).get(currStone.i);
-            if (currStone.isOut) {
-                positionOnBoard = playersHomePositions.get(currStone.color).get(i);
-            }
-            String currOnBoard = ludoBoard[positionOnBoard.x][positionOnBoard.y];
-            if (checkIfStoneExist(currOnBoard)) {
-                if (checkIfDifferentColor(currOnBoard, currStone.getStoneOnBoard())) {
-                    String stonesOnSafetyCell = getStonesOnSafetyCell(currOnBoard);
-                    if (stonesOnSafetyCell == null) {
-                        ludoBoard[positionOnBoard.x][positionOnBoard.y] = currStone.getStoneOnBoard();
-                    }
-                    ludoBoard[positionOnBoard.x][positionOnBoard.y] = '+' + stonesOnSafetyCell;
-                    continue;
-                }
-                ludoBoard[positionOnBoard.x][positionOnBoard.y] = 'w' + currStone.getStoneOnBoard().substring(1, 2);
-            } else {
-                ludoBoard[positionOnBoard.x][positionOnBoard.y] = currStone.getStoneOnBoard();
-            }
-        }
-    }
+//    private void setPlayerOnBoard(Player player) {
+//        ArrayList<PlayStone> playerStones = player.stones;
+//        for (int i = 0; i < playerStones.size(); i++) {
+//            PlayStone currStone = playerStones.get(i);
+//            Position positionOnBoard = stoneRoadOnBoardBaseOnColor.get(currStone.color).get(currStone.i);
+//            if (currStone.isOut) {
+//                positionOnBoard = playersHomePositions.get(currStone.color).get(i);
+//            }
+//            String currOnBoard = ludoBoard[positionOnBoard.x][positionOnBoard.y];
+//            if (checkIfStoneExist(currOnBoard)) {
+//                if (checkIfDifferentColor(currOnBoard, currStone.getStoneOnBoard())) {
+//                    String stonesOnSafetyCell = getStonesOnSafetyCell(currOnBoard);
+//                    if (stonesOnSafetyCell == null) {
+//                        ludoBoard[positionOnBoard.x][positionOnBoard.y] = currStone.getStoneOnBoard();
+//                    }
+//                    ludoBoard[positionOnBoard.x][positionOnBoard.y] = '+' + stonesOnSafetyCell;
+//                    continue;
+//                }
+//                ludoBoard[positionOnBoard.x][positionOnBoard.y] = 'w' + currStone.getStoneOnBoard().substring(1, 2);
+//            } else {
+//                ludoBoard[positionOnBoard.x][positionOnBoard.y] = currStone.getStoneOnBoard();
+//            }
+//        }
+//    }
 
-    private String getStonesOnSafetyCell(String currOnBoard) {
-        String stonesOnSafetyCell;
-        if (currOnBoard.charAt(0) == 'w') return null;
-        if (Character.isDigit(currOnBoard.charAt(0)) && Character.isAlphabetic(currOnBoard.charAt(1))) {
-            stonesOnSafetyCell = "2";
-        } else {
-            stonesOnSafetyCell = String.valueOf(Integer.parseInt(currOnBoard.substring(1, 2)) + 1);
-        }
-        return stonesOnSafetyCell;
-    }
-
-    private boolean checkIfStoneExist(String cellBoard) {
-        return checkIfDigits(cellBoard.substring(0, 1))
-                || cellBoard.charAt(0) == 'w'
-                || (cellBoard.charAt(0) == '+' && Character.isDigit(cellBoard.charAt(1)));
-    }
-
-    private boolean checkIfDifferentColor(String cellBoard, String cell) {
-        return !cellBoard.substring(1, 2).equals(cell.substring(1, 2));
-    }
-
-    private boolean checkIfDigits(String ch) {
-        return ch.equals("1") || ch.equals("2") || ch.equals("3") || ch.equals("4");
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder result = new StringBuilder();
-        for (String[] row : ludoBoard) {
-            for (String cell : row) {
-                result.append(ConsoleColors.getDesignedCell(cell));
-            }
-            result.append('\n');
-        }
-        return result.toString();
-    }
+//    private String getStonesOnSafetyCell(String currOnBoard) {
+//        String stonesOnSafetyCell;
+//        if (currOnBoard.charAt(0) == 'w') return null;
+//        if (Character.isDigit(currOnBoard.charAt(0)) && Character.isAlphabetic(currOnBoard.charAt(1))) {
+//            stonesOnSafetyCell = "2";
+//        } else {
+//            stonesOnSafetyCell = String.valueOf(Integer.parseInt(currOnBoard.substring(1, 2)) + 1);
+//        }
+//        return stonesOnSafetyCell;
+//    }
+//
+//    private boolean checkIfStoneExist(String cellBoard) {
+//        return checkIfDigits(cellBoard.substring(0, 1))
+//                || cellBoard.charAt(0) == 'w'
+//                || (cellBoard.charAt(0) == '+' && Character.isDigit(cellBoard.charAt(1)));
+//    }
+//
+//    private boolean checkIfDifferentColor(String cellBoard, String cell) {
+//        return !cellBoard.substring(1, 2).equals(cell.substring(1, 2));
+//    }
+//
+//    private boolean checkIfDigits(String ch) {
+//        return ch.equals("1") || ch.equals("2") || ch.equals("3") || ch.equals("4");
+//    }
+//
+//    @Override
+//    public String toString() {
+//        StringBuilder result = new StringBuilder();
+//        for (String[] row : ludoBoard) {
+//            for (String cell : row) {
+//                result.append(ConsoleColors.getDesignedCell(cell));
+//            }
+//            result.append('\n');
+//        }
+//        return result.toString();
+//    }
 }

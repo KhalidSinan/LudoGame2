@@ -1,17 +1,17 @@
 import java.util.Objects;
 
 public class PlayStone {
-    PlayerColor color;
-    Position position;
-    int i;
-    boolean isOut;
-    boolean isAWin;
-    int num;
+    public PlayerColor color;
+    public Position position;
+    public int i;
+    public boolean isOut;
+    public boolean isAWin;
+    public int num;
 
     public PlayStone(PlayerColor color, int num) {
         this.color = color;
         this.num = num;
-        this.position = LudoBoard.playersHomePositions.get(color).get(num);
+        this.position = LudoBoard.playersHomePositions.get(color).get(num-1);
         this.i = -1;
         this.isOut = true;
         this.isAWin = false;
@@ -20,7 +20,7 @@ public class PlayStone {
     public PlayStone(PlayerColor color, int num, int i, boolean isOut, boolean isAWin) {
         this.color = color;
         this.num = num;
-        if(i == -1) this.position = LudoBoard.playersHomePositions.get(color).get(num);
+        if(i == -1) this.position = LudoBoard.playersHomePositions.get(color).get(num-1);
         else this.position = LudoBoard.stoneRoadOnBoardBaseOnColor.get(color).get(i);
         this.i = i;
         this.isOut = isOut;

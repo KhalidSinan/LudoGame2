@@ -13,7 +13,8 @@ public class Game {
 
     public Game(int playersNumber) {
         this.players = getInitialPlayers(playersNumber);
-        Cells[][] initialGrid = getInitialGrid(playersNumber);
+        Cells[][] initialGrid = LudoBoard.createBoard();
+        putStonesOnHome(initialGrid);
         states = new ArrayList<>();
         states.add(new State(initialGrid, players));
     }
@@ -21,20 +22,12 @@ public class Game {
     public Game(int playersNumber, Integer... computerIndexes) {
         this.players = getInitialPlayers(playersNumber);
         createComputerPlayers(computerIndexes);
-        Cells[][] initialGrid = getInitialGrid(playersNumber);
+        Cells[][] initialGrid = LudoBoard.createBoard();
+        putStonesOnHome(initialGrid);
         states = new ArrayList<>();
         states.add(new State(initialGrid, players));
     }
 
-    private Cells[][] getInitialGrid(int playersNumber) {
-        Cells[][] initialGrid = new Cells[4][PlayerRoadMaker.roadLength];
-        PlayerColor[] playerColors = PlayerColor.values();
-        for (int i = 0; i < playerColors.length; i++) {
-            PlayerRoadMaker currPlayerRoad = new PlayerRoadMaker(playerColors[i]);
-            initialGrid[i] = currPlayerRoad.getPlayerRoad();
-        }
-        return initialGrid;
-    }
 
     private ArrayList<Player> getInitialPlayers(int playersNumber) {
         ArrayList<Player> initPlayers = new ArrayList<>();
@@ -51,6 +44,14 @@ public class Game {
         }
     }
 
+    private void putStonesOnHome(Cells[][] initialGrid){
+        for (Player player : players) {
+            for (PlayStone stone : player.stones) {
+                Position homePosition = stone.position;
+                initialGrid[homePosition.x][homePosition.y].listStones.add(stone);
+            }
+        }
+    }
 
     int dice() {
         Random random = new Random();
@@ -88,7 +89,7 @@ public class Game {
 
     void firstMove() {
         Player firstPlayer = firstPlayer();
-        State firstState = new State(getInitialGrid(players.size()), players, firstPlayer);
+        State firstState = new State(LudoBoard.createBoard(), players, firstPlayer);
         int dice = 0;
         while (dice != 6) {
             dice = dice();
@@ -109,8 +110,8 @@ public class Game {
         PlayStone chosenStone = chooseAStone(firstState, firstPlayer, dice);
         State newState = firstState.move(firstPlayer, chosenStone, dice);
         states.add(newState);
-        LudoBoard board = new LudoBoard(newState.players);
-        System.out.println(board);
+//        LudoBoard board = new LudoBoard(newState.players);
+//        System.out.println(board);
     }
 
     Player switchPlayer(State state) {
@@ -162,8 +163,8 @@ public class Game {
                 System.out.println(ex);
             }
 
-            board = new LudoBoard(states.get(states.size() - 1).players);
-            System.out.println(board);
+//            board = new LudoBoard(states.get(states.size() - 1).players);
+//            System.out.println(board);
         }
         System.out.println("Game Ended");
         System.out.println(ConsoleColors.getColor(

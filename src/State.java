@@ -6,28 +6,27 @@ import java.util.Objects;
 public class State {
     static boolean hasNewTurn = false;
     static int repeatedTurns = 0;
-    Cells[][] grid; // [4][52]
+    Cells[][] grid; // [13][13]
     ArrayList<Player> players;
     Player statePlayer;
-    boolean isFinished = false;
+    boolean isFinished;
 
     public State(Cells[][] grid, ArrayList<Player> players) {
         this.grid = grid;
         this.players = players;
-        this.isFinished = false;
+        this.isFinished = isFinished();
     }
 
     public State(Cells[][] grid, ArrayList<Player> players, Player currentPlayer) {
         this.statePlayer = currentPlayer;
         this.grid = grid;
         this.players = players;
-        this.isFinished = false;
+        this.isFinished = isFinished();
     }
 
     public State(State state) {
         this.players = deepCopyPlayers(state.players);
         this.grid = deepCopyGrid(state.grid);
-//        getNewListStones();
         this.isFinished = state.isFinished;
         this.statePlayer = state.statePlayer;
     }
@@ -207,16 +206,6 @@ public class State {
         hasNewTurn = true;
     }
 
-    public boolean isFinished() {
-        for (Player player : players) {
-            int winningStones = 0;
-            for (PlayStone stone : player.stones) {
-                if (stone.isAWin) winningStones++;
-            }
-            if (winningStones == 4) return true;
-        }
-        return false;
-    }
 
     ArrayList<State> nextStates(State currentState, int dice) {
         ArrayList<State> possibleMoves = new ArrayList<>();
@@ -232,6 +221,17 @@ public class State {
         }
     }
 
+    public boolean isFinished() {
+        for (Player player : players) {
+            int winningStones = 0;
+            for (PlayStone stone : player.stones) {
+                if (stone.isAWin) winningStones++;
+            }
+            if (winningStones == 4) return true;
+        }
+        return false;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -242,6 +242,18 @@ public class State {
     @Override
     public int hashCode() {
         return Objects.hash(players, statePlayer, isFinished);
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder board = new StringBuilder();
+        for (Cells[] row : grid){
+            for (Cells cell: row) {
+                board.append(cell.toString());
+            }
+            board.append('\n');
+        }
+        return board.toString();
     }
 }
 

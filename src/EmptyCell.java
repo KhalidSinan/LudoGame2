@@ -21,6 +21,10 @@ public class EmptyCell extends Cells {
 
     @Override
     public String toString() {
+        if(listStones.size() == 1) {
+            PlayStone standingStone = listStones.get(0);
+            return ConsoleColors.getCellByColor(standingStone.color) + " " + standingStone.num + " " + ConsoleColors.RESET;
+        }
         return ConsoleColors.BLACK_BACKGROUND + "   " + ConsoleColors.RESET;
     }
 }
