@@ -1,14 +1,12 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class FreeCell extends Cells {
     public FreeCell() {
-        super('-');
+        super("-");
     }
 
-    public FreeCell(char name, ArrayList<PlayStone> listStones) {
+    public FreeCell(String name, ArrayList<PlayStone> listStones) {
         super(name, listStones);
-
     }
 
     @Override

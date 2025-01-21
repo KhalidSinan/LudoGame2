@@ -1,20 +1,19 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public abstract class ColoredCell extends Cells {
 
     private PlayerColor color;
 
-    public ColoredCell(char name) {
+    public ColoredCell(String name) {
         super(name);
     }
 
-    public ColoredCell(char name, PlayerColor color) {
+    public ColoredCell(String name, PlayerColor color) {
         super(name);
         this.color = color;
     }
 
-    public ColoredCell(char name, ArrayList<PlayStone> listStones) {
+    public ColoredCell(String name, ArrayList<PlayStone> listStones) {
         super(name, listStones);
     }
 

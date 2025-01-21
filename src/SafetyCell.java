@@ -1,12 +1,11 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class SafetyCell extends Cells {
     public SafetyCell() {
-        super('+');
+        super("+");
     }
 
-    public SafetyCell(char name, ArrayList<PlayStone> listStones) {
+    public SafetyCell(String name, ArrayList<PlayStone> listStones) {
         super(name, listStones);
     }
 
