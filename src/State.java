@@ -131,7 +131,7 @@ public class State {
                     currentStone.i = 0;
                     break;
                 } else {
-                    dice = currentState.BlockFounded(dice, currentStone);
+                    dice = currentState.blockFounded(dice, currentStone);
                     currentState.handleBoardMovement(currentStone, playerIndex, dice);
                     break;
                 }
