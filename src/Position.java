@@ -9,6 +9,11 @@ public class Position {
         this.y = y;
     }
 
+    public Position(Position position){
+        this.x = position.x;
+        this.y = position.y;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

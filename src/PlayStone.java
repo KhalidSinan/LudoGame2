@@ -31,6 +31,7 @@ public class PlayStone {
     public PlayStone(PlayStone playStone) {
         this.color = playStone.color;
         this.num = playStone.num;
+        this.position = new Position(playStone.position);
         this.i = playStone.i;
         this.isOut = playStone.isOut;
         this.isAWin = playStone.isAWin;
