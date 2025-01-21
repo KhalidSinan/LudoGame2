@@ -5,13 +5,13 @@ import java.util.Map;
 
 public class LudoBoard {
     private final String[][] ludoBoard;
-    private static final Map<PlayerColor, Map<Integer, Position>> stoneRoadOnBoardBaseOnColor;
-    private static final Map<Integer, Position> blueRoadOnBoard;
-    private static final Map<Integer, Position> greenRoadOnBoard;
-    private static final Map<Integer, Position> yellowRoadOnBoard;
-    private static final Map<Integer, Position> redRoadOnBoard;
-    private static final Map<PlayerColor, List<Position>> playersHomePositions;
-    private static final Map<Position, Boolean> safetyCellsOnBoard;
+    public static final Map<PlayerColor, Map<Integer, Position>> stoneRoadOnBoardBaseOnColor;
+    public static final Map<Integer, Position> blueRoadOnBoard;
+    public static final Map<Integer, Position> greenRoadOnBoard;
+    public static final Map<Integer, Position> yellowRoadOnBoard;
+    public static final Map<Integer, Position> redRoadOnBoard;
+    public static final Map<PlayerColor, List<Position>> playersHomePositions;
+    public static final Map<Position, Boolean> safetyCellsOnBoard;
 
     static {
         blueRoadOnBoard = new HashMap<>();
