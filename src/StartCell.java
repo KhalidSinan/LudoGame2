@@ -17,11 +17,10 @@ public class StartCell extends ColoredCell {
     }
 
     @Override
-    State collide(State state, PlayStone stone) {
-//        state.players.get(stone.color.index-1).stones.get(stone.num-1).isOut = false;
-        if(stone.color == getColor()){
-//            state.players.get(stone.color.index-1).stones.get(stone.num-1).i = 0;
-        stone.i = 0;
+    State collide(State state, PlayStone stone){
+        if(stone.color == getColor()) {
+            stone.i = 0;
+            stone.position = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(0);
         }
         stone.isOut = false;
         listStones.add(stone);

@@ -89,7 +89,7 @@ public class Game {
 
     void firstMove() {
         Player firstPlayer = firstPlayer();
-        State firstState = new State(states.get(0).grid, players, firstPlayer);
+        State firstState = new State(states.get(0).grid, players, firstPlayer.playerColor.index-1);
         System.out.println(firstState);
         int dice = 0;
         while (dice != 6) {
@@ -104,8 +104,9 @@ public class Game {
                 } catch (InterruptedException ex) {
                     System.out.println(ex);
                 }
-                firstPlayer = switchPlayer(firstState);
-                firstState.statePlayer = firstPlayer;
+                firstState.switchPlayer();
+                firstPlayer = firstState.getCurrentPlayer();
+//                firstState.statePlayer = firstPlayer;
             }
         }
         PlayStone chosenStone = firstState.chooseAStone(firstPlayer, dice);
@@ -114,19 +115,6 @@ public class Game {
         states.add(newState);
 //        LudoBoard board = new LudoBoard(newState.players);
 //        System.out.println(board);
-    }
-
-    Player switchPlayer(State state) {
-        if (State.hasNewTurn) return state.statePlayer;
-        for (int i = 0; i < state.players.size(); i++) {
-            if (state.statePlayer.playerColor.equals(state.players.get(i).playerColor)) {
-                if (i == state.players.size() - 1) {
-                    return state.players.get(0);
-                } else
-                    return state.players.get(i + 1);
-            }
-        }
-        return null;
     }
 
     public void play() {
@@ -138,8 +126,8 @@ public class Game {
         State.repeatedTurns = 0;
         while (!lastState.isFinished()) {
             lastState = states.get(states.size() - 1);
-            currentPlayer = switchPlayer(lastState);
-            lastState.statePlayer = currentPlayer;
+            lastState.switchPlayer();
+            currentPlayer = lastState.getCurrentPlayer();
             Scanner input = new Scanner(System.in);
             System.out.println(ConsoleColors.getColor(
                     currentPlayer.playerColor) + "Enter Dice Number: " + ConsoleColors.RESET);
@@ -166,8 +154,8 @@ public class Game {
         }
         System.out.println("Game Ended");
         System.out.println(ConsoleColors.getColor(
-                states.get(states.size() - 1).statePlayer.playerColor) +
-                states.get(states.size() - 1).statePlayer.playerColor + " WON " + ConsoleColors.RESET);
+                states.get(states.size() - 1).getCurrentPlayer().playerColor) +
+                states.get(states.size() - 1).getCurrentPlayer().playerColor + " WON " + ConsoleColors.RESET);
     }
 
 

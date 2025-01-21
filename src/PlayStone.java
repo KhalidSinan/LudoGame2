@@ -37,29 +37,15 @@ public class PlayStone {
         this.isAWin = playStone.isAWin;
     }
 
-    public String getStoneOnBoard() {
-        char result = 'g';
-        switch (color.ordinal()) {
-            case 1 -> result = 'y';
-            case 2 -> result = 'r';
-            case 3 -> result = 'b';
-        }
-        return String.valueOf(num) + String.valueOf(result);
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof PlayStone playStone)) return false;
-        return i == playStone.i &&
-                isOut == playStone.isOut &&
-                isAWin == playStone.isAWin &&
-                num == playStone.num &&
-                color == playStone.color;
+        return i == playStone.i && isOut == playStone.isOut && isAWin == playStone.isAWin && num == playStone.num && color == playStone.color && Objects.equals(position, playStone.position);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(color, i, isOut, isAWin, num);
+        return Objects.hash(color, position, i, isOut, isAWin, num);
     }
 }
