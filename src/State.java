@@ -77,7 +77,6 @@ public class State {
         int step = 0;
         if(stone.i == -1) return diceNumber;
         for (int i = 1; i <= diceNumber; i++) {
-            System.out.println(stone.i + i);
             Position pos = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(stone.i + i);
             if (grid[pos.x][pos.y].isBlock(stone.color)) {
                 return step;

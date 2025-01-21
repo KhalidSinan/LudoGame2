@@ -132,7 +132,7 @@ public class Game {
             System.out.println(ConsoleColors.getColor(
                     currentPlayer.playerColor) + "Enter Dice Number: " + ConsoleColors.RESET);
             int dice = input.nextInt();
-            if (State.repeatedTurns == 3) {
+            if (State.repeatedTurns == 2) {
                 System.out.println("You cannot play 3 consecutive turns");
                 State.hasNewTurn = false;
                 State.repeatedTurns = 0;
