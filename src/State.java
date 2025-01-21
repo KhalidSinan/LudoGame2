@@ -101,6 +101,7 @@ public class State {
         currentState.grid[currPosition.x][currPosition.y].listStones.remove(stone);
         Position newPosition = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(stone.i + dice);
         if(stone.isOut) newPosition = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(0);
+        stone.i += dice;
         currentState.grid[newPosition.x][newPosition.y].collide(currentState, stone);
         stone.position = newPosition;
         return currentState;
