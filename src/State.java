@@ -105,11 +105,11 @@ public class State {
         return intersectedWith;
     }
 
-    public int BlockFounded(int diceNumber, PlayStone stone) {
+    public int blockFounded(int diceNumber, PlayStone stone) {
         int step = 0;
-
         for (int i = stone.i + 1; i <= diceNumber + stone.i; i++) {
-            if (grid[stone.color.index - 1][i].listStones.size() >= 2) {
+            Position pos = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(stone.i+i);
+            if (grid[pos.x ][pos.y ].listStones.size() >= 2) {
                 return step;
             }
             step++;
@@ -247,8 +247,8 @@ public class State {
     @Override
     public String toString() {
         StringBuilder board = new StringBuilder();
-        for (Cells[] row : grid){
-            for (Cells cell: row) {
+        for (Cells[] row : grid) {
+            for (Cells cell : row) {
                 board.append(cell.toString());
             }
             board.append('\n');

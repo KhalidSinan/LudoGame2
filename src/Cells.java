@@ -32,6 +32,20 @@ public abstract class Cells {
         return newStones;
     }
 
+    boolean isBlock(PlayStone stone){
+        if(listStones.size()<=1){
+            return false;
+        }
+
+            for (int i = 0; i < listStones.size(); i++) {
+                if (listStones.get(i).color != stone.color) {
+                    return false;
+                }
+            }
+
+        return  true ;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
