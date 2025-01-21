@@ -11,7 +11,6 @@ public class State {
     public State(Cells[][] grid, ArrayList<Player> players) {
         this.grid = grid;
         this.players = players;
-//        getNewListStones();
         this.isFinished = checkFinished();
     }
 
@@ -19,7 +18,6 @@ public class State {
         this.currentPlayer = currentPlayer;
         this.grid = grid;
         this.players = players;
-//        getNewListStones();
         this.isFinished = checkFinished();
     }
 
@@ -98,7 +96,6 @@ public class State {
         PlayStone stone = currentState.players.get(player.playerColor.index - 1).stones.get(chosenStone.num - 1);
         dice = currentState.blockFounded(dice, stone);
         Position currPosition = stone.position;
-//        if(!stone.isOut) currPosition = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(stone.i);
         currentState.grid[currPosition.x][currPosition.y].listStones.remove(stone);
         Position newPosition = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(stone.i + dice);
         if (stone.isOut) newPosition = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(0);
@@ -159,15 +156,6 @@ public class State {
         return false;
     }
 
-    private int getPlayerIndexByString(String color) {
-        return switch (color) {
-            case "GREEN" -> 0;
-            case "YELLOW" -> 1;
-            case "RED" -> 2;
-            case "BLUE" -> 3;
-            default -> -1;
-        };
-    }
 
     private void addTurn(int dice) {
         if (dice != 6) {
@@ -221,36 +209,3 @@ public class State {
         return board.toString();
     }
 }
-
-// @Override
-// public String toString() {
-// return " ";
-// }
-
-// Map<String, Integer> intersection(PlayStone stone) {
-// Map<String, Integer> intersection = new HashMap<>();
-// for (PlayerColor color : PlayerColor.values()) {
-// if (stone.color == color)
-// intersection.put(color.name(), stone.i);
-// int colorIndex = color.getStartingPosition();
-// int offset = stone.color.getStartingPosition() - colorIndex;
-// int notKnownColorIndex = (stone.i + 12 * (offset < 0 ? (offset + 4) :
-// offset)) % 48;
-// intersection.put(color.name(), notKnownColorIndex);
-// }
-// return intersection;
-// }
-
-// List<Integer> cellsPosition = new ArrayList<>();
-// for (int i = stone.i + 1; i <= diceNumber + stone.i; i++) {
-// Map<String, Integer> positions = intersectionWithStep(stone, diceNumber);
-// cellsPosition.add(positions.get(stone.color.name()));
-// }
-// for (Integer listPosition : cellsPosition) {
-// for (int i = 0; i < 4; i++) {
-// if (grid[listPosition][i].listStones.size() >= 2) {
-// return true;
-// }
-// }
-// }
-// return false;

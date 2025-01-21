@@ -6,8 +6,4 @@ public enum PlayerColor {
     PlayerColor(int index) {
         this.index = index;
     }
-
-    public int getStartingPosition() {
-        return index;
-    }
 }

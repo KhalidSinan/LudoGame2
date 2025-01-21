@@ -15,14 +15,6 @@ public class Player {
         initializePlayerStones();
     }
 
-    public Player(String playerName, PlayerColor playerColor, boolean isComputer) {
-        this.winner = false;
-        this.isComputer = isComputer;
-        this.playerName = playerName;
-        this.playerColor = playerColor;
-        initializePlayerStones();
-    }
-
     // deep copy constructor
     public Player(Player player) {
         this.winner = player.winner;
@@ -53,7 +45,6 @@ public class Player {
             if (stone.isOut && dice != 6) continue;
             if (stone.i + dice >= 48 && getWinningTileIndex() != stone.i + dice) continue;
             if (state.blockFounded(dice, stone) == 0) continue;
-//            System.out.println("block " + state.BlockFounded(dice, stone) + " for stone " + stone.num + " " + stone.color);
             movableStones.add(stone);
         }
         return movableStones;

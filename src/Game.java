@@ -59,7 +59,7 @@ public class Game {
     }
 
     boolean win() {
-        return states.get(states.size() - 1).checkFinished();
+        return getCurrentState().checkFinished();
     }
 
     List<Integer> throwing() {
@@ -106,32 +106,25 @@ public class Game {
                 }
                 firstState.switchPlayer();
                 firstPlayer = firstState.getCurrentPlayer();
-//                firstState.statePlayer = firstPlayer;
             }
         }
         PlayStone chosenStone = firstState.chooseAStone(firstPlayer, dice);
         State newState = firstState.move(firstPlayer, chosenStone, dice);
         System.out.println(newState);
         states.add(newState);
-//        LudoBoard board = new LudoBoard(newState.players);
-//        System.out.println(board);
     }
 
     public void play() {
         State lastState;
         Player currentPlayer;
         firstMove();
-        lastState = states.get(states.size() - 1);
         State.hasNewTurn = false;
         State.repeatedTurns = 0;
         while (!win()) {
-            lastState = states.get(states.size() - 1);
+            lastState = getCurrentState();
             lastState.switchPlayer();
             currentPlayer = lastState.getCurrentPlayer();
-            Scanner input = new Scanner(System.in);
-            System.out.println(ConsoleColors.getColor(
-                    currentPlayer.playerColor) + "Enter Dice Number: " + ConsoleColors.RESET);
-            int dice = input.nextInt();
+            int dice = dice();
             if (State.repeatedTurns == 2) {
                 System.out.println("You cannot play 3 consecutive turns");
                 State.hasNewTurn = false;
@@ -154,10 +147,14 @@ public class Game {
         }
         System.out.println("Game Ended");
         System.out.println(ConsoleColors.getColor(
-                states.get(states.size() - 1).getCurrentPlayer().playerColor) +
-                states.get(states.size() - 1).getCurrentPlayer().playerColor + " WON " + ConsoleColors.RESET);
+                getCurrentState().getCurrentPlayer().playerColor) +
+                getCurrentState().getCurrentPlayer().playerColor + " WON " + ConsoleColors.RESET);
     }
 
+    
+    public State getCurrentState() {
+        return states.get(states.size() - 1);
+    }
 
 
 }
