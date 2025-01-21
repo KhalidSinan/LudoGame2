@@ -124,7 +124,7 @@ public class Game {
         lastState = states.get(states.size() - 1);
         State.hasNewTurn = false;
         State.repeatedTurns = 0;
-        while (!lastState.isFinished()) {
+        while (!win()) {
             lastState = states.get(states.size() - 1);
             lastState.switchPlayer();
             currentPlayer = lastState.getCurrentPlayer();

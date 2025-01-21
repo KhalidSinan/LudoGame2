@@ -12,7 +12,7 @@ public class State {
         this.grid = grid;
         this.players = players;
 //        getNewListStones();
-        this.isFinished = isFinished();
+        this.isFinished = checkFinished();
     }
 
     public State(Cells[][] grid, ArrayList<Player> players, int currentPlayer) {
@@ -20,7 +20,7 @@ public class State {
         this.grid = grid;
         this.players = players;
 //        getNewListStones();
-        this.isFinished = isFinished();
+        this.isFinished = checkFinished();
     }
 
     public State(State state) {
@@ -48,14 +48,15 @@ public class State {
         }
         return newPlayers;
     }
-//
-    private void getNewListStones(){
+
+    //
+    private void getNewListStones() {
         for (Player player : players) {
             for (PlayStone stone : player.stones) {
                 Position pos;
-                if(stone.i == -1) pos = LudoBoard.playersHomePositions.get(stone.color).get(stone.num-1);
+                if (stone.i == -1) pos = LudoBoard.playersHomePositions.get(stone.color).get(stone.num - 1);
                 else pos = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(stone.i);
-                if(grid[pos.x][pos.y].listStones.contains(stone)){
+                if (grid[pos.x][pos.y].listStones.contains(stone)) {
                     grid[pos.x][pos.y].listStones.remove(stone);
                     grid[pos.x][pos.y].listStones.add(stone);
                 }
@@ -75,7 +76,7 @@ public class State {
 
     public int blockFounded(int diceNumber, PlayStone stone) {
         int step = 0;
-        if(stone.i == -1) return diceNumber;
+        if (stone.i == -1) return diceNumber;
         for (int i = 1; i <= diceNumber; i++) {
             Position pos = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(stone.i + i);
             if (grid[pos.x][pos.y].isBlock(stone.color)) {
@@ -94,13 +95,13 @@ public class State {
         }
         addTurn(dice);
         State currentState = new State(this);
-        PlayStone stone = currentState.players.get(player.playerColor.index-1).stones.get(chosenStone.num-1);
+        PlayStone stone = currentState.players.get(player.playerColor.index - 1).stones.get(chosenStone.num - 1);
         dice = currentState.blockFounded(dice, stone);
         Position currPosition = stone.position;
 //        if(!stone.isOut) currPosition = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(stone.i);
         currentState.grid[currPosition.x][currPosition.y].listStones.remove(stone);
         Position newPosition = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(stone.i + dice);
-        if(stone.isOut) newPosition = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(0);
+        if (stone.isOut) newPosition = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(0);
         stone.i += dice;
         currentState.grid[newPosition.x][newPosition.y].collide(currentState, stone);
         stone.position = newPosition;
@@ -140,7 +141,7 @@ public class State {
 
     void switchPlayer() {
         if (State.hasNewTurn) return;
-        currentPlayer = (++currentPlayer)%(players.size());
+        currentPlayer = (++currentPlayer) % (players.size());
     }
 
     public boolean checkFinished() {
@@ -192,17 +193,6 @@ public class State {
 //            return possibleMoves;
 //        }
 //    }
-
-    public boolean isFinished() {
-        for (Player player : players) {
-            int winningStones = 0;
-            for (PlayStone stone : player.stones) {
-                if (stone.isAWin) winningStones++;
-            }
-            if (winningStones == 4) return true;
-        }
-        return false;
-    }
 
     @Override
     public boolean equals(Object o) {
