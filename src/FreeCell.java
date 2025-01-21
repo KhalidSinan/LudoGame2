@@ -24,11 +24,11 @@ public class FreeCell extends Cells {
         return state;
     }
 
-    public void sendStonesToHome(ArrayList<PlayStone> stones, State state){
+    public void sendStonesToHome(ArrayList<PlayStone> stones, State state) {
         stones.forEach(currStone -> {
             currStone.isOut = true;
             currStone.i = -1;
-            currStone.position = LudoBoard.playersHomePositions.get(currStone.color).get(currStone.num-1);
+            currStone.position = LudoBoard.playersHomePositions.get(currStone.color).get(currStone.num - 1);
             state.grid[currStone.position.x][currStone.position.y].listStones.add(currStone);
         });
         stones.clear();
@@ -49,11 +49,11 @@ public class FreeCell extends Cells {
 
     @Override
     public String toString() {
-        if(listStones.size() == 0) return ConsoleColors.WHITE_BACKGROUND + "   " + ConsoleColors.RESET;
-        else if(listStones.size() == 1) {
+        if (listStones.size() == 0) return ConsoleColors.WHITE_BACKGROUND + "   " + ConsoleColors.RESET;
+        else if (listStones.size() == 1) {
             PlayStone standingStone = listStones.get(0);
             String stoneColor = ConsoleColors.getCellByColor(standingStone.color);
-            return  stoneColor + " " + standingStone.num + " " + ConsoleColors.RESET;
+            return stoneColor + " " + standingStone.num + " " + ConsoleColors.RESET;
         }
         String wallColor = ConsoleColors.getCellBackgroundByColor(listStones.get(0).color);
         return wallColor + "   " + ConsoleColors.RESET;

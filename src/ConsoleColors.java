@@ -24,7 +24,7 @@ public class ConsoleColors {
 
 
     public static String getColor(PlayerColor color) {
-         return switch (color) {
+        return switch (color) {
             case BLUE -> BLUE;
             case RED -> RED;
             case GREEN -> GREEN;
@@ -32,17 +32,18 @@ public class ConsoleColors {
         };
     }
 
-    public static String getCellBackgroundByColor(PlayerColor color){
+    public static String getCellBackgroundByColor(PlayerColor color) {
         String result = " ";
-        switch (color.index){
-            case 1 ->  result = ConsoleColors.GREEN_BACKGROUND;
-            case 4 ->  result = ConsoleColors.BLUE_BACKGROUND;
-            case 3 ->  result = ConsoleColors.RED_BACKGROUND;
-            case 2  -> result = ConsoleColors.YELLOW_BACKGROUND;
+        switch (color.index) {
+            case 1 -> result = ConsoleColors.GREEN_BACKGROUND;
+            case 4 -> result = ConsoleColors.BLUE_BACKGROUND;
+            case 3 -> result = ConsoleColors.RED_BACKGROUND;
+            case 2 -> result = ConsoleColors.YELLOW_BACKGROUND;
         }
         return result;
     }
-    public static String getCellByColor(PlayerColor color){
+
+    public static String getCellByColor(PlayerColor color) {
         String result = " ";
         switch (color.ordinal()) {
             case 0 -> result = ConsoleColors.GREEN;
