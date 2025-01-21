@@ -12,7 +12,7 @@ public class GoalCell extends ColoredCell {
 
     @Override
     public Cells copy() {
-        return new GoalCell(getColor(), this.deepCopyStones(this.listStones));
+        return new GoalCell(getColor(), this.listStones);
     }
 
     @Override

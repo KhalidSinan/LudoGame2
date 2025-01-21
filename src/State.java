@@ -24,6 +24,7 @@ public class State {
     public State(State state) {
         this.players = deepCopyPlayers(state.players);
         this.grid = deepCopyGrid(state.grid);
+        getNewListStones();
         this.isFinished = state.isFinished;
         this.statePlayer = state.statePlayer;
     }
@@ -46,19 +47,19 @@ public class State {
         return newPlayers;
     }
 //
-//    private void getNewListStones(){
-//        for (Player player : players) {
-//            int playerIndex = player.playerColor.index - 1;
-//            for (PlayStone stone : player.stones) {
-//                if(stone.i == -1) continue;
-//                System.out.println(stone);
-//                if(grid[playerIndex][stone.i].listStones.contains(stone)){
-//                    grid[playerIndex][stone.i].listStones.remove(stone);
-//                    grid[playerIndex][stone.i].listStones.add(stone);
-//                }
-//            }
-//        }
-//    }
+    private void getNewListStones(){
+        for (Player player : players) {
+            for (PlayStone stone : player.stones) {
+                Position pos;
+                if(stone.i == -1) pos = LudoBoard.playersHomePositions.get(stone.color).get(stone.num-1);
+                else pos = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(stone.i);
+                if(grid[pos.x][pos.y].listStones.contains(stone)){
+                    grid[pos.x][pos.y].listStones.remove(stone);
+                    grid[pos.x][pos.y].listStones.add(stone);
+                }
+            }
+        }
+    }
 
     private Cells[][] deepCopyGrid(Cells[][] grid) {
         Cells[][] newGrid = new Cells[grid.length][grid[0].length];
@@ -92,7 +93,6 @@ public class State {
         }
         addTurn(dice);
         State currentState = new State(this);
-
         dice = currentState.blockFounded(dice, chosenStone);
         currentState.grid[chosenStone.position.x][chosenStone.position.y].listStones.remove(chosenStone);
         Position newPosition = LudoBoard.stoneRoadOnBoardBaseOnColor.get(chosenStone.color).get(chosenStone.i + dice);

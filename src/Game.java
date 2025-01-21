@@ -131,7 +131,6 @@ public class Game {
 
     public void play() {
         State lastState;
-        LudoBoard board;
         Player currentPlayer;
         firstMove();
         lastState = states.get(states.size() - 1);
@@ -164,8 +163,6 @@ public class Game {
             } catch (InterruptedException ex) {
                 System.out.println(ex);
             }
-//            board = new LudoBoard(states.get(states.size() - 1).players);
-//            System.out.println(board);
         }
         System.out.println("Game Ended");
         System.out.println(ConsoleColors.getColor(
