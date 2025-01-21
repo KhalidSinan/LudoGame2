@@ -6,7 +6,6 @@ public class ComputerDecision {
     private final Player player;
     private final int dice;
     private final PlayStone decisionStone;
-
     public ComputerDecision(State state, Player player, int dice){
         this.state = state;
         this.player = player;
@@ -18,12 +17,16 @@ public class ComputerDecision {
         int playerIndex = State.getPlayerIndex(player);
         ArrayList<PlayStone> movableStones = state.players.get(playerIndex).getMovableStones(state, dice);
         if(!movableStones.isEmpty()){
+            int repeatedTurnsTemp = State.repeatedTurns;
+            boolean hasNewTurnTemp = State.hasNewTurn;
             TreeMap<Integer, PlayStone> scores = new TreeMap<>();
             for (PlayStone movableStone : movableStones) {
                 State newState = state.move(player, movableStone, dice);
                 int score = calculateStoneScore(movableStone, state, newState);
                 scores.put(score, movableStone);
             }
+            State.hasNewTurn = hasNewTurnTemp;
+            State.repeatedTurns = repeatedTurnsTemp;
             return scores.lastEntry().getValue();
         }
         return null;
