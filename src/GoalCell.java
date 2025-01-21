@@ -26,7 +26,8 @@ public class GoalCell extends ColoredCell {
 
     @Override
     public String toString() {
-        if(listStones.size() == 0) return ConsoleColors.getCellBackgroundByColor(getColor()) + "   " + ConsoleColors.RESET;
+        if (listStones.size() == 0)
+            return ConsoleColors.getCellBackgroundByColor(getColor()) + "   " + ConsoleColors.RESET;
         PlayStone standingStone = listStones.get(0);
         return ConsoleColors.getCellByColor(standingStone.color) + " " + standingStone.num + " " + ConsoleColors.RESET;
     }

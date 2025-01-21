@@ -44,7 +44,7 @@ public class Game {
         }
     }
 
-    private void putStonesOnHome(Cells[][] initialGrid){
+    private void putStonesOnHome(Cells[][] initialGrid) {
         for (Player player : players) {
             for (PlayStone stone : player.stones) {
                 Position homePosition = stone.position;
@@ -89,7 +89,7 @@ public class Game {
 
     void firstMove() {
         Player firstPlayer = firstPlayer();
-        State firstState = new State(states.get(0).grid, players, firstPlayer.playerColor.index-1);
+        State firstState = new State(states.get(0).grid, players, firstPlayer.playerColor.index - 1);
         System.out.println(firstState);
         int dice = 0;
         while (dice != 6) {
@@ -151,7 +151,7 @@ public class Game {
                 getCurrentState().getCurrentPlayer().playerColor + " WON " + ConsoleColors.RESET);
     }
 
-    
+
     public State getCurrentState() {
         return states.get(states.size() - 1);
     }
