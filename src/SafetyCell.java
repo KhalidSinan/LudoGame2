@@ -15,9 +15,10 @@ public class SafetyCell extends Cells {
     }
 
     @Override
-    ArrayList<PlayStone> collide(PlayStone stone) {
+    State collide(State state, PlayStone stone) {
         listStones.add(stone);
-        return new ArrayList<>();
+//        state.grid[stone.position.x][stone.position.y].listStones.add(stone);
+        return state;
     }
 
     @Override

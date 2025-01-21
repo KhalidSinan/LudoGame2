@@ -7,7 +7,7 @@ public abstract class Cells {
 
     public Cells(String name) {
         this.name = name;
-        this.listStones= new ArrayList<>();
+        this.listStones = new ArrayList<>();
     }
 
     public Cells(String name, ArrayList<PlayStone> listStones) {
@@ -22,7 +22,7 @@ public abstract class Cells {
 
     abstract public Cells copy();
 
-    abstract ArrayList<PlayStone> collide(PlayStone stone);
+    abstract State collide(State state, PlayStone stone);
 
     protected ArrayList<PlayStone> deepCopyStones(ArrayList<PlayStone> stones) {
         ArrayList<PlayStone> newStones = new ArrayList<>();

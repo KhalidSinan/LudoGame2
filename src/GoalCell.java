@@ -20,10 +20,12 @@ public class GoalCell extends ColoredCell {
     }
 
     @Override
-    ArrayList<PlayStone> collide(PlayStone stone) {
+    State collide(State state, PlayStone stone) {
         listStones.add(stone);
         stone.isAWin = true;
-        return new ArrayList<>();
+//        state.grid[stone.position.x][stone.position.y].listStones.add(stone);
+//        state.grid[stone.position.x][stone.position.y].listStones.get(0).isAWin=true;
+        return state;
     }
 
     @Override
