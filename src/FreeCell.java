@@ -27,6 +27,19 @@ public class FreeCell extends Cells {
     }
 
     @Override
+    boolean isBlock(PlayStone stone) {
+        if (listStones.size() <= 1) {
+            return false;
+        }
+        for (int i = 0; i < listStones.size(); i++) {
+            if (listStones.get(i).color != stone.color) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    @Override
     public String toString() {
         if(listStones.size() == 0) return ConsoleColors.WHITE_BACKGROUND + "   " + ConsoleColors.RESET;
         else if(listStones.size() == 1) {
