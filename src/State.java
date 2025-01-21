@@ -105,8 +105,8 @@ public class State {
     public int blockFounded(int diceNumber, PlayStone stone) {
         int step = 0;
         for (int i = stone.i + 1; i <= diceNumber + stone.i; i++) {
-            Position pos = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(stone.i+i);
-            if (grid[pos.x ][pos.y ].listStones.size() >= 2) {
+            Position pos = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(stone.i + i);
+            if (grid[pos.x][pos.y].listStones.size() >= 2) {
                 return step;
             }
             step++;
