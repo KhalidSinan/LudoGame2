@@ -19,8 +19,9 @@ public class Dice {
             throwHistory[2] = diceNumber;
         }
         clearThrowHistory();
-        return 0;
+        return diceNumber;
     }
+
     void clearThrowHistory() {
         throwHistory = new int[3];
         throwCount = 0;
