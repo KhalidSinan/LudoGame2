@@ -28,10 +28,8 @@ public class Dice {
     }
 
     void probCalc() {
-
         for (int i = 1; i <= 6; i++) {
             prob.put(i, 1.0 / 6.0);
-
         }
         if (throwCount > 1 && throwHistory[0] == 6) {
 
@@ -46,8 +44,6 @@ public class Dice {
                 }
             }
         }
-
-
         if (throwCount > 2 && throwHistory[0] == 6 && throwHistory[1] == 6) {
             double conditionalProbability = 0.25 * prob.get(6);
             prob.put(6, conditionalProbability);
@@ -60,10 +56,7 @@ public class Dice {
                 }
             }
         }
-
-
     }
-
 
     int cumulativeProbability() {
         double randomValue = Math.random();
@@ -75,11 +68,8 @@ public class Dice {
                 return i;
             }
         }
-
-
         return 6;
     }
-
 }
 
 

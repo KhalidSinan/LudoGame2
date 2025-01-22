@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.TreeMap;
 
 public class ComputerDecision {
     private final State state;
@@ -9,7 +8,7 @@ public class ComputerDecision {
 
     private final int alpha = Integer.MAX_VALUE;
     private final int beta = Integer.MIN_VALUE;
-    private final int maxDepth = 40;
+    private final int maxDepth = 5;
 
     public ComputerDecision(State state, Player player, int dice) {
         this.state = state;
@@ -22,7 +21,6 @@ public class ComputerDecision {
         ArrayList<PlayStone> movableStones = player.getMovableStones(state, dice);
 
         if (movableStones.isEmpty()) {
-            System.out.println("No valid stones to move for player");
             return null;
         }
 
