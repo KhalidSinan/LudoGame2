@@ -4,19 +4,19 @@ public class Expectiminimax {
 
     public PlayStone solve(State state, Player currentPlayer, int dice, int depth, int alpha, int beta) {
         if (currentPlayer.isComputer) {
-            return maxMove(state, currentPlayer, depth, alpha, beta);
+            return maxMove(state, currentPlayer, depth, alpha, beta, dice);
         } else {
-            return minMove(state, currentPlayer, depth, alpha, beta);
+            return minMove(state, currentPlayer, depth, alpha, beta, dice);
         }
     }
 
-    private PlayStone maxMove(State state, Player currentPlayer, int depth, int alpha, int beta) {
+    private PlayStone maxMove(State state, Player currentPlayer, int depth, int alpha, int beta, int dice) {
         if (depth <= 0 || state.checkFinished()) {
             return null;
         }
         int maxEval = Integer.MIN_VALUE;
         PlayStone bestStone = null;
-        ArrayList<PlayStone> movableStones = currentPlayer.getMovableStones(state, 6);
+        ArrayList<PlayStone> movableStones = currentPlayer.getMovableStones(state, dice);
         for (PlayStone stone : movableStones) {
             int eval = chanceNode(state, stone, currentPlayer, depth - 1, alpha, beta);
             if (eval > maxEval) {
@@ -32,13 +32,13 @@ public class Expectiminimax {
         return bestStone;
     }
 
-    private PlayStone minMove(State state, Player currentPlayer, int depth, int alpha, int beta) {
+    private PlayStone minMove(State state, Player currentPlayer, int depth, int alpha, int beta, int dice) {
         if (depth <= 0 || state.checkFinished()) {
             return null;
         }
         int minEval = Integer.MAX_VALUE;
         PlayStone bestStone = null;
-        ArrayList<PlayStone> movableStones = currentPlayer.getMovableStones(state, 6);
+        ArrayList<PlayStone> movableStones = currentPlayer.getMovableStones(state, dice);
         for (PlayStone stone : movableStones) {
             int eval = chanceNode(state, stone, currentPlayer, depth - 1, alpha, beta);
             if (eval < minEval) {
@@ -64,11 +64,11 @@ public class Expectiminimax {
 
             int eval = 0;
             if (nextPlayer.isComputer) {
-                if (maxMove(clonedState, nextPlayer, depth - 1, alpha, beta) != null) {
+                if (maxMove(clonedState, nextPlayer, depth - 1, alpha, beta, dice) != null) {
                     eval = evaluateState(stone, state, clonedState, currentPlayer);
                 }
             } else {
-                if (minMove(clonedState, nextPlayer, depth - 1, alpha, beta) != null) {
+                if (minMove(clonedState, nextPlayer, depth - 1, alpha, beta, dice) != null) {
                     eval = evaluateState(stone, state, clonedState, currentPlayer);
                 }
             }
