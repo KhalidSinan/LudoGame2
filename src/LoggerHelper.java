@@ -6,8 +6,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class LoggerHelper {
-    public static Logger logger = Logger.getLogger(Main.class.getName());
+    public static final Logger logger = Logger.getLogger(Main.class.getName());
 
+    @SuppressWarnings({"unchecked", "LoggerStringConcat"})
     public void loggerHelper(Map<String, Object> solution, long time, long memory) throws IOException {
         FileHandler fh = new FileHandler("./logs/result.log");
         fh.setFormatter(new MyLoggerFormatter());

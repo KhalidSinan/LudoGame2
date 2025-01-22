@@ -1,11 +1,10 @@
 import java.io.IOException;
-import java.util.Map;
 
 public class Main {
-    static LoggerHelper logger = new LoggerHelper();
+    // static LoggerHelper logger = new LoggerHelper();
 
     public static void main(String[] args) {
-        Game game = new Game(2, 1);
+        Game game = new Game(2);
         game.play();
     }
 

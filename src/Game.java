@@ -1,11 +1,11 @@
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 import java.util.Random;
-import java.util.Scanner;
 
-@SuppressWarnings({"ConvertToTryWithResources", "resource"})
+@SuppressWarnings({"ConvertToTryWithResources"})
 
 public class Game {
     ArrayList<Player> players;
@@ -27,7 +27,6 @@ public class Game {
         states = new ArrayList<>();
         states.add(new State(initialGrid, players));
     }
-
 
     private ArrayList<Player> getInitialPlayers(int playersNumber) {
         ArrayList<Player> initPlayers = new ArrayList<>();
@@ -100,7 +99,7 @@ public class Game {
                 break;
             else {
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(Duration.ofMillis(1000));
                 } catch (InterruptedException ex) {
                     System.out.println(ex);
                 }
@@ -140,7 +139,7 @@ public class Game {
                 states.add(newState);
             }
             try {
-                Thread.sleep(1000);
+                Thread.sleep(Duration.ofMillis(1000));
             } catch (InterruptedException ex) {
                 System.out.println(ex);
             }
@@ -151,18 +150,8 @@ public class Game {
                 getCurrentState().getCurrentPlayer().playerColor + " WON " + ConsoleColors.RESET);
     }
 
-
     public State getCurrentState() {
         return states.get(states.size() - 1);
     }
 
-
 }
-
-// switch (state.currentPlayer.playerColor) {
-// case GREEN -> state.players.get(1);
-// case YELLOW -> state.players.get(2);
-// case RED -> state.players.get(3);
-// case BLUE -> state.players.get(0);
-// default -> null;
-// }

@@ -40,7 +40,7 @@ public abstract class Cells {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Cells cells)) return false;
-        return name == cells.name && Objects.equals(listStones, cells.listStones);
+        return name.equals(cells.name) && Objects.equals(listStones, cells.listStones);
     }
 
     @Override

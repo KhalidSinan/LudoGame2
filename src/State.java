@@ -47,13 +47,14 @@ public class State {
         return newPlayers;
     }
 
-    //
     private void getNewListStones() {
         for (Player player : players) {
             for (PlayStone stone : player.stones) {
                 Position pos;
-                if (stone.i == -1) pos = LudoBoard.playersHomePositions.get(stone.color).get(stone.num - 1);
-                else pos = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(stone.i);
+                if (stone.i == -1)
+                    pos = LudoBoard.playersHomePositions.get(stone.color).get(stone.num - 1);
+                else
+                    pos = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(stone.i);
                 if (grid[pos.x][pos.y].listStones.contains(stone)) {
                     grid[pos.x][pos.y].listStones.remove(stone);
                     grid[pos.x][pos.y].listStones.add(stone);
@@ -74,7 +75,8 @@ public class State {
 
     public int blockFounded(int diceNumber, PlayStone stone) {
         int step = 0;
-        if (stone.i == -1) return diceNumber;
+        if (stone.i == -1)
+            return diceNumber;
         for (int i = 1; i <= diceNumber; i++) {
             Position pos = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(stone.i + i);
             if (grid[pos.x][pos.y].isBlock(stone.color)) {
@@ -98,21 +100,25 @@ public class State {
         Position currPosition = stone.position;
         currentState.grid[currPosition.x][currPosition.y].listStones.remove(stone);
         Position newPosition = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(stone.i + dice);
-        if (stone.isOut) newPosition = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(0);
+        if (stone.isOut)
+            newPosition = LudoBoard.stoneRoadOnBoardBaseOnColor.get(stone.color).get(0);
         stone.i += dice;
         currentState.grid[newPosition.x][newPosition.y].collide(currentState, stone);
         stone.position = newPosition;
         return currentState;
     }
 
-
     public PlayStone chooseAStone(Player player, int dice) {
-        if (player.isComputer) return new ComputerDecision(this, player, dice).getDecisionStone();
-        else return chooseAStoneByPlayer(player, dice);
+        if (player.isComputer)
+            return new ComputerDecision(this, player, dice).getDecisionStone();
+        else
+            return chooseAStoneByPlayer(player, dice);
     }
 
+    @SuppressWarnings({ "ConvertToTryWithResources", "resource" })
     private PlayStone chooseAStoneByPlayer(Player player, int dice) {
         int playerIndex = State.getPlayerIndex(player);
+        PlayStone stone = null;
         ArrayList<PlayStone> movableStones = players.get(playerIndex).getMovableStones(this, dice);
         if (!movableStones.isEmpty()) {
             System.out.print(ConsoleColors.WHITE_BOLD_BRIGHT + "choose a stone to move : " + ConsoleColors.RESET);
@@ -122,14 +128,23 @@ public class State {
             }
             System.out.println();
             Scanner input = new Scanner(System.in);
-            int chosen = input.nextInt();
-            for (PlayStone movableStone : movableStones) {
-                if (movableStone.num == chosen) {
-                    return movableStone;
+            while (true) {
+                int chosen = input.nextInt();
+                boolean found = false;
+                for (PlayStone movableStone : movableStones) {
+                    if (movableStone.num == chosen) {
+                        stone = movableStone;
+                        found = true;
+                        break;
+                    }
                 }
+                if (found)
+                    break;
+                else
+                    System.out.println("This stone is not available");
             }
         }
-        return null;
+        return stone;
     }
 
     public Player getCurrentPlayer() {
@@ -137,15 +152,17 @@ public class State {
     }
 
     void switchPlayer() {
-        if (State.hasNewTurn) return;
+        if (State.hasNewTurn)
+            return;
         currentPlayer = (++currentPlayer) % (players.size());
     }
 
-    public boolean checkFinished() {
+    public final boolean checkFinished() {
         for (Player player : players) {
             int winningStones = 0;
             for (PlayStone stone : player.stones) {
-                if (stone.isAWin) winningStones++;
+                if (stone.isAWin)
+                    winningStones++;
             }
             if (winningStones == 4) {
                 isFinished = true;
@@ -155,7 +172,6 @@ public class State {
         isFinished = false;
         return false;
     }
-
 
     private void addTurn(int dice) {
         if (dice != 6) {
@@ -167,27 +183,31 @@ public class State {
         hasNewTurn = true;
     }
 
-
-//    ArrayList<State> nextStates(State currentState, int dice) {
-//        ArrayList<State> possibleMoves = new ArrayList<>();
-//        int playerIndex = getPlayerIndex(currentState.statePlayer);
-//        ArrayList<PlayStone> movableStones = currentState.players.get(playerIndex).getMovableStones(currentState, dice);
-//        if (movableStones.isEmpty()) {
-//            return possibleMoves;
-//        } else {
-//            for (PlayStone playStone : movableStones) {
-//                possibleMoves.add(currentState.move(currentState.statePlayer, playStone, dice));
-//            }
-//            return possibleMoves;
-//        }
-//    }
+    // ArrayList<State> nextStates(State currentState, int dice) {
+    // ArrayList<State> possibleMoves = new ArrayList<>();
+    // int playerIndex = getPlayerIndex(currentState.statePlayer);
+    // ArrayList<PlayStone> movableStones =
+    // currentState.players.get(playerIndex).getMovableStones(currentState, dice);
+    // if (movableStones.isEmpty()) {
+    // return possibleMoves;
+    // } else {
+    // for (PlayStone playStone : movableStones) {
+    // possibleMoves.add(currentState.move(currentState.statePlayer, playStone,
+    // dice));
+    // }
+    // return possibleMoves;
+    // }
+    // }
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof State)) return false;
+        if (this == o)
+            return true;
+        if (!(o instanceof State))
+            return false;
         State state = (State) o;
-        return currentPlayer == state.currentPlayer && isFinished == state.isFinished && Arrays.equals(grid, state.grid) && Objects.equals(players, state.players);
+        return currentPlayer == state.currentPlayer && isFinished == state.isFinished && Arrays.equals(grid, state.grid)
+                && Objects.equals(players, state.players);
     }
 
     @Override
