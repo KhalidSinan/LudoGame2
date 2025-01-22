@@ -11,7 +11,7 @@ public class FreeCell extends Cells {
 
     @Override
     public Cells copy() {
-        return new FreeCell(this.name, new ArrayList<PlayStone>(this.listStones));
+        return new FreeCell(this.name, new ArrayList<>(this.listStones));
     }
 
     @Override
@@ -49,7 +49,7 @@ public class FreeCell extends Cells {
 
     @Override
     public String toString() {
-        if (listStones.size() == 0) return ConsoleColors.WHITE_BACKGROUND + "   " + ConsoleColors.RESET;
+        if (listStones.isEmpty()) return ConsoleColors.WHITE_BACKGROUND + "   " + ConsoleColors.RESET;
         else if (listStones.size() == 1) {
             PlayStone standingStone = listStones.get(0);
             String stoneColor = ConsoleColors.getCellByColor(standingStone.color);

@@ -1,4 +1,3 @@
-import java.io.Console;
 import java.util.ArrayList;
 
 public class StartCell extends ColoredCell {
@@ -13,7 +12,7 @@ public class StartCell extends ColoredCell {
 
     @Override
     public Cells copy() {
-        return new StartCell(getColor(), new ArrayList<PlayStone>(this.listStones));
+        return new StartCell(getColor(), new ArrayList<>(this.listStones));
     }
 
     @Override
@@ -29,7 +28,7 @@ public class StartCell extends ColoredCell {
 
     @Override
     public String toString() {
-        if (listStones.size() == 0) return ConsoleColors.getCellByColor(getColor()) + " * " + ConsoleColors.RESET;
+        if (listStones.isEmpty()) return ConsoleColors.getCellByColor(getColor()) + " * " + ConsoleColors.RESET;
         else if (listStones.size() == 1) {
             PlayStone standingStone = listStones.get(0);
             return ConsoleColors.getCellByColor(standingStone.color) + " " + standingStone.num + " " + ConsoleColors.RESET;
