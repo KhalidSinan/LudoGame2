@@ -10,6 +10,7 @@ import java.util.Random;
 public class Game {
     ArrayList<Player> players;
     ArrayList<State> states;
+    Dice dice;
 
     public Game(int playersNumber) {
         this.players = getInitialPlayers(playersNumber);
@@ -17,6 +18,7 @@ public class Game {
         putStonesOnHome(initialGrid);
         states = new ArrayList<>();
         states.add(new State(initialGrid, players));
+        dice = new Dice();
     }
 
     public Game(int playersNumber, Integer... computerIndexes) {
@@ -26,6 +28,7 @@ public class Game {
         putStonesOnHome(initialGrid);
         states = new ArrayList<>();
         states.add(new State(initialGrid, players));
+        dice = new Dice();
     }
 
     private ArrayList<Player> getInitialPlayers(int playersNumber) {
@@ -53,8 +56,7 @@ public class Game {
     }
 
     int dice() {
-        Random random = new Random();
-        return random.nextInt(6) + 1;
+        return dice.rollDice();
     }
 
     boolean win() {
