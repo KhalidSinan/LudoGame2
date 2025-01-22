@@ -17,8 +17,8 @@ public class Dice {
             throwHistory[1] = diceNumber;
         } else if (throwCount == 3) {
             throwHistory[2] = diceNumber;
+            clearThrowHistory();
         }
-        clearThrowHistory();
         return diceNumber;
     }
 
