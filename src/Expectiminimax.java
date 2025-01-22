@@ -58,17 +58,18 @@ public class Expectiminimax {
         double expectedValue = 0.0;
         for (int dice = 1; dice <= 6; dice++) {
             State clonedState = new State(state);
+            if (stone.i + dice > 51) continue;
             clonedState.move(currentPlayer, stone, dice);
             clonedState.switchPlayer();
             Player nextPlayer = clonedState.getCurrentPlayer();
 
             int eval = 0;
             if (nextPlayer.isComputer) {
-                if (maxMove(clonedState, nextPlayer, depth - 1, alpha, beta, dice) != null) {
+                if (maxMove(clonedState, nextPlayer, depth, alpha, beta, dice) != null) {
                     eval = evaluateState(stone, state, clonedState, currentPlayer);
                 }
             } else {
-                if (minMove(clonedState, nextPlayer, depth - 1, alpha, beta, dice) != null) {
+                if (minMove(clonedState, nextPlayer, depth, alpha, beta, dice) != null) {
                     eval = evaluateState(stone, state, clonedState, currentPlayer);
                 }
             }
