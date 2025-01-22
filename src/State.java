@@ -168,19 +168,23 @@ public class State {
     }
 
 
-//    ArrayList<State> nextStates(State currentState, int dice) {
-//        ArrayList<State> possibleMoves = new ArrayList<>();
-//        int playerIndex = getPlayerIndex(currentState.statePlayer);
-//        ArrayList<PlayStone> movableStones = currentState.players.get(playerIndex).getMovableStones(currentState, dice);
-//        if (movableStones.isEmpty()) {
-//            return possibleMoves;
-//        } else {
-//            for (PlayStone playStone : movableStones) {
-//                possibleMoves.add(currentState.move(currentState.statePlayer, playStone, dice));
-//            }
-//            return possibleMoves;
-//        }
-//    }
+    ArrayList<State> nextStates(int dice) {
+        int repeatedTurns = State.repeatedTurns;
+        ArrayList<State> possibleMoves = new ArrayList<>();
+        ArrayList<PlayStone> movableStones = getCurrentPlayer().getMovableStones(this, dice);
+        if (movableStones.isEmpty()) {
+            return possibleMoves;
+        }
+        for (PlayStone playStone : movableStones) {
+            State.repeatedTurns = 0;
+            State newState = move(getCurrentPlayer(), playStone, dice);
+            if(!newState.equals(this)){
+                possibleMoves.add(newState);
+            }
+        }
+        State.repeatedTurns = repeatedTurns;
+        return possibleMoves;
+    }
 
     @Override
     public boolean equals(Object o) {
