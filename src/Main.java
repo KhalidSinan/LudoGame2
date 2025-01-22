@@ -4,7 +4,7 @@ public class Main {
     // static LoggerHelper logger = new LoggerHelper();
 
     public static void main(String[] args) {
-        Game game = new Game(2,0,1);
+        Game game = new Game(2, 0, 1);
         game.play();
     }
 

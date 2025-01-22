@@ -6,8 +6,8 @@ public class ComputerDecision {
     private final int dice;
     private final PlayStone decisionStone;
 
-    private final int alpha = Integer.MAX_VALUE;
-    private final int beta = Integer.MIN_VALUE;
+    private final int alpha = Integer.MIN_VALUE;
+    private final int beta = Integer.MAX_VALUE;
     private final int maxDepth = 5;
 
     public ComputerDecision(State state, Player player, int dice) {
