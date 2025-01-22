@@ -7,6 +7,10 @@ public class ComputerDecision {
     private final int dice;
     private final PlayStone decisionStone;
 
+    private final int alpha = Integer.MAX_VALUE;
+    private final int beta = Integer.MIN_VALUE;
+    private final int maxDepth = 40;
+
     public ComputerDecision(State state, Player player, int dice) {
         this.state = state;
         this.player = player;
@@ -15,46 +19,23 @@ public class ComputerDecision {
     }
 
     private PlayStone chooseAStone() {
-        int playerIndex = State.getPlayerIndex(player);
-        ArrayList<PlayStone> movableStones = state.players.get(playerIndex).getMovableStones(state, dice);
-        if (!movableStones.isEmpty()) {
-            int repeatedTurnsTemp = State.repeatedTurns;
-            boolean hasNewTurnTemp = State.hasNewTurn;
-            TreeMap<Integer, PlayStone> scores = new TreeMap<>();
-            for (PlayStone movableStone : movableStones) {
-                State newState = state.move(player, movableStone, dice);
-                int score = calculateStoneScore(movableStone, state, newState);
-                scores.put(score, movableStone);
-            }
-            State.hasNewTurn = hasNewTurnTemp;
-            State.repeatedTurns = repeatedTurnsTemp;
-            return scores.lastEntry().getValue();
-        }
-        return null;
-    }
+        ArrayList<PlayStone> movableStones = player.getMovableStones(state, dice);
 
-    private int calculateStoneScore(PlayStone stone, State oldState, State newState) {
-        int playerIndex = State.getPlayerIndex(player);
-        PlayStone oldStone = oldState.players.get(playerIndex).stones.get(stone.num - 1);
-        PlayStone newStone = newState.players.get(playerIndex).stones.get(stone.num - 1);
-        int score = oldStone.i;
-        if (!oldStone.isAWin && newStone.isAWin) score += 100;
-        else if (canKill(oldStone, oldState.grid[newStone.position.x][newStone.position.y].listStones)) score += 60;
-        else if (oldStone.isOut && !newStone.isOut) score += 50;
-        return score;
-    }
-
-    private boolean canKill(PlayStone currStone, ArrayList<PlayStone> stones) {
-        for (PlayStone stone : stones) {
-            if (currStone.color != stone.color) {
-                return true;
-            }
+        if (movableStones.isEmpty()) {
+            System.out.println("No valid stones to move for player");
+            return null;
         }
-        return false;
+
+        Expectiminimax algorithm = new Expectiminimax();
+        PlayStone decisionStone = algorithm.solve(state, player, dice, maxDepth, alpha, beta);
+
+        if (decisionStone == null || !movableStones.contains(decisionStone)) {
+            decisionStone = movableStones.get(0);
+        }
+        return decisionStone;
     }
 
     public PlayStone getDecisionStone() {
         return decisionStone;
     }
-
 }
