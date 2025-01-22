@@ -11,7 +11,7 @@ public class EmptyCell extends Cells {
 
     @Override
     public Cells copy() {
-        return new EmptyCell(this.name, new ArrayList<PlayStone>(this.listStones));
+        return new EmptyCell(this.name, new ArrayList<>(this.listStones));
     }
 
     @Override
@@ -21,7 +21,7 @@ public class EmptyCell extends Cells {
 
     @Override
     public String toString() {
-        if(listStones.size() == 1) {
+        if (listStones.size() == 1) {
             PlayStone standingStone = listStones.get(0);
             return ConsoleColors.getCellByColor(standingStone.color) + " " + standingStone.num + " " + ConsoleColors.RESET;
         }

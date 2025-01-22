@@ -1,11 +1,11 @@
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 import java.util.Random;
-import java.util.Scanner;
 
-@SuppressWarnings({"ConvertToTryWithResources", "resource"})
+@SuppressWarnings({"ConvertToTryWithResources"})
 
 public class Game {
     ArrayList<Player> players;
@@ -28,7 +28,6 @@ public class Game {
         states.add(new State(initialGrid, players));
     }
 
-
     private ArrayList<Player> getInitialPlayers(int playersNumber) {
         ArrayList<Player> initPlayers = new ArrayList<>();
         PlayerColor[] playerColors = PlayerColor.values();
@@ -44,7 +43,7 @@ public class Game {
         }
     }
 
-    private void putStonesOnHome(Cells[][] initialGrid){
+    private void putStonesOnHome(Cells[][] initialGrid) {
         for (Player player : players) {
             for (PlayStone stone : player.stones) {
                 Position homePosition = stone.position;
@@ -89,7 +88,7 @@ public class Game {
 
     void firstMove() {
         Player firstPlayer = firstPlayer();
-        State firstState = new State(states.get(0).grid, players, firstPlayer.playerColor.index-1);
+        State firstState = new State(states.get(0).grid, players, firstPlayer.playerColor.index - 1);
         System.out.println(firstState);
         int dice = 0;
         while (dice != 6) {
@@ -100,7 +99,7 @@ public class Game {
                 break;
             else {
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(Duration.ofMillis(1000));
                 } catch (InterruptedException ex) {
                     System.out.println(ex);
                 }
@@ -125,7 +124,7 @@ public class Game {
             lastState.switchPlayer();
             currentPlayer = lastState.getCurrentPlayer();
             int dice = dice();
-            if (State.repeatedTurns == 2) {
+            if (State.repeatedTurns == 3) {
                 System.out.println("You cannot play 3 consecutive turns");
                 State.hasNewTurn = false;
                 State.repeatedTurns = 0;
@@ -140,7 +139,7 @@ public class Game {
                 states.add(newState);
             }
             try {
-                Thread.sleep(1000);
+                Thread.sleep(Duration.ofMillis(1000));
             } catch (InterruptedException ex) {
                 System.out.println(ex);
             }
@@ -151,18 +150,8 @@ public class Game {
                 getCurrentState().getCurrentPlayer().playerColor + " WON " + ConsoleColors.RESET);
     }
 
-    
     public State getCurrentState() {
         return states.get(states.size() - 1);
     }
 
-
 }
-
-// switch (state.currentPlayer.playerColor) {
-// case GREEN -> state.players.get(1);
-// case YELLOW -> state.players.get(2);
-// case RED -> state.players.get(3);
-// case BLUE -> state.players.get(0);
-// default -> null;
-// }

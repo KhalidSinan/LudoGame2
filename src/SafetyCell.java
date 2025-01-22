@@ -11,7 +11,7 @@ public class SafetyCell extends Cells {
 
     @Override
     public Cells copy() {
-        return new SafetyCell(this.name, new ArrayList<PlayStone>(this.listStones));
+        return new SafetyCell(this.name, new ArrayList<>(this.listStones));
     }
 
     @Override
@@ -22,8 +22,8 @@ public class SafetyCell extends Cells {
 
     @Override
     public String toString() {
-        if(listStones.size() == 0) return ConsoleColors.BLACK_BACKGROUND_BRIGHT + "   " + ConsoleColors.RESET;
-        else if(listStones.size() == 1) {
+        if (listStones.isEmpty()) return ConsoleColors.BLACK_BACKGROUND_BRIGHT + "   " + ConsoleColors.RESET;
+        else if (listStones.size() == 1) {
             PlayStone standingStone = listStones.get(0);
             return ConsoleColors.getCellByColor(standingStone.color) + " " + standingStone.num + " " + ConsoleColors.RESET;
         }
