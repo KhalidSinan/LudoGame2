@@ -11,6 +11,8 @@ public class Dice {
         probCalc();
         int diceNumber = cumulativeProbability();
 
+        if (State.repeatedTurns == 0) clearThrowHistory();
+
         if (throwCount == 1) {
             throwHistory[0] = diceNumber;
         } else if (throwCount == 2) {

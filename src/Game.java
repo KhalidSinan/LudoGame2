@@ -139,6 +139,9 @@ public class Game {
                 State newState = lastState.move(currentPlayer, chosenStone, dice);
                 System.out.println(newState);
                 states.add(newState);
+            } else {
+                State.repeatedTurns = 0;
+                State.hasNewTurn = false;
             }
             try {
                 Thread.sleep(Duration.ofMillis(1000));
