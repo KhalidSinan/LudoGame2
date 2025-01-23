@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.*;
 
 public class State {
@@ -88,11 +89,6 @@ public class State {
     }
 
     public State move(Player player, PlayStone chosenStone, int dice) {
-        if (State.repeatedTurns == 3) {
-            repeatedTurns = 0;
-            hasNewTurn = false;
-            return this;
-        }
         addTurn(dice);
         State currentState = new State(this);
         PlayStone stone = currentState.players.get(player.playerColor.index - 1).stones.get(chosenStone.num - 1);
@@ -109,13 +105,13 @@ public class State {
     }
 
     public PlayStone chooseAStone(Player player, int dice) {
-        if (player.isComputer)
-            return new ComputerDecision(this, player, dice).getDecisionStone();
-        else
+        if (player.isComputer) {
+            return new ComputerDecision(this, player, dice).chooseAStone();
+        } else
             return chooseAStoneByPlayer(player, dice);
     }
 
-    @SuppressWarnings({ "ConvertToTryWithResources", "resource" })
+    @SuppressWarnings({"ConvertToTryWithResources", "resource"})
     private PlayStone chooseAStoneByPlayer(Player player, int dice) {
         int playerIndex = State.getPlayerIndex(player);
         PlayStone stone = null;
@@ -181,24 +177,6 @@ public class State {
         }
         repeatedTurns++;
         hasNewTurn = true;
-    }
-
-    ArrayList<State> nextStates(int dice) {
-        int repeatedTurns = State.repeatedTurns;
-        ArrayList<State> possibleMoves = new ArrayList<>();
-        ArrayList<PlayStone> movableStones = getCurrentPlayer().getMovableStones(this, dice);
-        if (movableStones.isEmpty()) {
-            return possibleMoves;
-        }
-        for (PlayStone playStone : movableStones) {
-            State.repeatedTurns = 0;
-            State newState = move(getCurrentPlayer(), playStone, dice);
-            if(!newState.equals(this)){
-                possibleMoves.add(newState);
-            }
-        }
-        State.repeatedTurns = repeatedTurns;
-        return possibleMoves;
     }
 
     @Override
