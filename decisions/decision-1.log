@@ -1,0 +1,5462 @@
+Algorithm: Expectiminimax
+Tree Structure:
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 2)
+
+            MaxNode (Eval: 2)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 1)
+
+        MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+      ChanceNode (Eval: 0)
+
+    MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+      ChanceNode (Eval: 8)
+
+    MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+      ChanceNode (Eval: 8)
+
+    MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+      ChanceNode (Eval: 8)
+
+    MaxNode (Eval: 8)
+
+  ChanceNode (Eval: 8)
+
+MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+      ChanceNode (Eval: 8)
+
+    MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 2)
+
+            MaxNode (Eval: 2)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 1)
+
+        MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+      ChanceNode (Eval: 0)
+
+    MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+      ChanceNode (Eval: 8)
+
+    MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+      ChanceNode (Eval: 8)
+
+    MaxNode (Eval: 8)
+
+  ChanceNode (Eval: 8)
+
+MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+      ChanceNode (Eval: 8)
+
+    MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+      ChanceNode (Eval: 8)
+
+    MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 2)
+
+            MaxNode (Eval: 2)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+          ChanceNode (Eval: 1)
+
+        MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+      ChanceNode (Eval: 0)
+
+    MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+      ChanceNode (Eval: 8)
+
+    MaxNode (Eval: 8)
+
+  ChanceNode (Eval: 8)
+
+MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+      ChanceNode (Eval: 8)
+
+    MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+      ChanceNode (Eval: 8)
+
+    MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+          ChanceNode (Eval: 0)
+
+        MaxNode (Eval: 0)
+
+      ChanceNode (Eval: 8)
+
+    MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 0)
+
+            MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 1)
+
+            MaxNode (Eval: 1)
+
+          ChanceNode (Eval: 8)
+
+        MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 8)
+
+            MaxNode (Eval: 8)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+                  ChanceNode (Eval: 0)
+
+                MaxNode (Eval: 0)
+
+              ChanceNode (Eval: 2)
+
+            MaxNode (Eval: 2)
+
+          ChanceNode (Eval: 1)
+
+        MaxNode (Eval: 1)
+
+      ChanceNode (Eval: 0)
+
+    MaxNode (Eval: 0)
+
+  ChanceNode (Eval: 8)
+
+MaxNode (Eval: 8)
+
+Total Nodes: 3405
+Time: 141 ms
+Memory: 3404128 bytes

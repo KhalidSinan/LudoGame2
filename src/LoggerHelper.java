@@ -1,6 +1,5 @@
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Map;
+import java.util.List;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -8,19 +7,23 @@ import java.util.logging.Logger;
 public class LoggerHelper {
     public static final Logger logger = Logger.getLogger(Main.class.getName());
 
-    @SuppressWarnings({"unchecked", "LoggerStringConcat"})
-    public void loggerHelper(Map<String, Object> solution, long time, long memory) throws IOException {
-        FileHandler fh = new FileHandler("./logs/result.log");
+    public void loggerHelper(int decisionNumber, int numberOfNodes, List<TreeNode> nodes, long time, long memory) throws IOException {
+        FileHandler fh = new FileHandler("./decisions/decision-" + decisionNumber + ".log");
         fh.setFormatter(new MyLoggerFormatter());
         logger.addHandler(fh);
-        int visitedSize = (int) solution.get("visitedSize");
-        ArrayList<State> path = (ArrayList<State>) solution.get("path");
         logger.setLevel(Level.ALL);
+
         logger.log(Level.FINE, "Algorithm: Expectiminimax");
-        logger.log(Level.FINE, "Visited States: " + visitedSize);
-        logger.log(Level.FINE, "Path States: " + path.size());
-        logger.log(Level.FINE, "Time: " + time + " milliseconds");
-        logger.log(Level.FINE, "Memory Used: " + memory + " bytes");
+        logger.log(Level.FINE, "Tree Structure:\n");
+
+        for (TreeNode node : nodes) {
+            String indent = "  ".repeat(node.getDepth());
+            logger.log(Level.FINE, indent + node.getType() + " (Eval: " + node.getEvaluation() + ")\n");
+        }
+
+        logger.log(Level.FINE, "Total Nodes: " + numberOfNodes);
+        logger.log(Level.FINE, "Time: " + time + " ms");
+        logger.log(Level.FINE, "Memory: " + memory + " bytes");
 
         fh.close();
     }
